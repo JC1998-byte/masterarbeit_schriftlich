@@ -1,0 +1,286 @@
+% !TeX root = ../main.tex
+
+\documentclass
+[	
+	pdftex,	 	
+	paper				= a4,				% paper size
+	toc					= listof,			% list of figures and tables added to table of content
+	toc					= bib,				% references section added to table of content
+	titlepage			= true,	 			% set title in 'titlepage' environment
+	numbers 			= noendperiod, 		% remove last point after enumeration
+	draft 				= false,			
+	twoside 			= false,	 		% modify page margin on both sides
+	headinclude			= true,				% add header to text body
+	footinclude			= false,			% add footer to text body
+	fontsize 			= 11pt, 			% set document font size
+]
+{scrreprt}
+
+% DO NOT EDIT THESE LINES!
+\newif\iftikzexternal
+\newif\ifgerman
+
+%-------------------------------------------
+%-- make your customized settings here! ----
+%-------------------------------------------
+
+%------------------------------------------------
+%-- main settings that appear on the frontpage --
+%------------------------------------------------
+
+% document title and author
+\newcommand{\documenttitle}{Titel der Arbeit}
+\newcommand{\documentauthor}{\textbf{Jan Caspers}}
+
+% which type is your thesis? And which grade do you seek to achieve?
+\newcommand{\thesistype}{MASTERARBEIT}
+\newcommand{\thesisgrade}{Master of Science}
+
+%\newcommand{\thesistype}{MASTERARBEIT}
+%\newcommand{\thesisgrade}{Master of Science}
+
+%\newcommand{\thesistype}{DISSERTATION}
+%\newcommand{\thesisgrade}{Doctor rerum naturalium}
+
+% in which subject/field do you graduate?
+\newcommand{\thesisfield}{Mensch-Technik-Interaktion}
+
+% where do you graduate?
+\newcommand{\thesiswhere}{
+    am \textbf{Fachbereich 1} \\
+    der \textbf{Hochschule Ruhr West}
+}
+
+% where is your affiliation located?
+\newcommand{\thesislocation}{Bottrop}
+
+% who is the first examiner/reviewer and what is his/her affiliation?
+\newcommand{\firstexaminer}{Prof. Dr. Stefan Geisler}
+\newcommand{\firstexamineraffiliation}{Hochschule Ruhr West}
+
+% who is the second examiner/reviewer and what is his/her affiliation?
+\newcommand{\secondexaminer}{XXXX XXXX}
+\newcommand{\secondexamineraffiliation}{XXXX}
+
+%-------------------------------------------
+%-- further template settings for latex ----
+%-------------------------------------------
+
+% date format for complete document
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+    \monthname[\THEMONTH] \THEYEAR
+}%
+\newdateformat{daymonthyeardate}{%
+    \twodigit{\THEDAY}. \monthname[\THEMONTH] \THEYEAR
+}
+
+% place your images within images/ folder
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+% comment in if your document is in German language
+% otherwise, the document essentials are in English
+\germantrue
+
+% comment in if you want tikz to buffer the images as PDFs in the folder 'tikz/'
+% this might significantly speed up LaTex compilation!
+% Note: if commented-in, you also need to pass the argument '-shell-escape' to the LaTex compiler!
+%\tikzexternaltrue
+
+% add your custom packages here
+\usepackage{makecell}
+\usepackage{ifthen}
+\usepackage{stackengine}
+\usepackage{subcaption}
+\renewcommand\thesubfigure{\roman{subfigure}}
+
+% set vertical distance after single paragraph
+\parskip6pt
+
+% set horizontal distance after single paragraph
+\parindent6pt
+
+
+%-------------------------------------------
+%-- DO NOT MODIFY! Here starts the magic ---
+%-------------------------------------------
+
+%-------------------------------------------
+%------------- Package section -------------
+%-------------------------------------------
+
+\usepackage[onehalfspacing]{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{bbm}
+\usepackage{abstract}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage{framed}
+\usepackage{booktabs}
+\usepackage{acronym}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage[intoc, noprefix]{nomencl}
+\makenomenclature
+
+\ifgerman
+    \usepackage[ngerman]{babel}
+    \renewcommand{\nomname}{Nomenklatur}
+\fi
+
+
+% last but not least, initialize tikz library
+\usepackage{tikz}
+\usepackage{overpic}
+
+% if 'tikzexternal' is true, enable tikz buffer mode
+\iftikzexternal
+    \usetikzlibrary{external}
+    \tikzexternalize[prefix=tikz/]
+    
+    % significantly increase the memory buffer to prevent memory overflow
+    \tikzset{external/system call={pdflatex \tikzexternalcheckshellescape -extra-mem-top=10000000 -extra-mem-bot=10000000 -halt-on-error -interaction=batchmode -jobname "\image" "\texsource"}}
+\fi
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+
+
+%-------------------------------------------
+%--------- Page properties section ---------
+%-------------------------------------------
+
+% set margin of single page
+\usepackage[
+    paper=a4paper,
+    left=25mm,
+    right=20mm,
+    top=30mm,
+    bottom=40mm
+]{geometry}
+
+% set width of head separator line
+\usepackage[headsepline=0.5pt]{scrlayer-scrpage}
+\usepackage{scrhack}
+
+% set page style to scrheadings and clear default properties to overwrite with custom properties
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+
+% automatically update title in headline based on the current chapter
+\automark{chapter}
+
+% set head line caption on the right-hand side of the page
+\ohead{\rightmark}
+
+% overwrite font familiy for head line
+\setkomafont{pageheadfoot}{\normalfont\sffamily\bfseries\small}
+\renewcommand\chapterheadstartvskip{\vspace*{-1cm}}
+
+% page enumerations - center page numbering and set font family
+\cfoot[\pagemark]{\pagemark}
+\setkomafont{pagenumber}{\normalfont\sffamily}
+
+% set the font familiy which overwrites some defaults
+\renewcommand{\rmdefault}{stix} %This overwrites the roman default
+\renewcommand{\sfdefault}{stix} %This overwrites the sans serif default
+\renewcommand{\ttdefault}{cmtt} %This overwrites the monospaced (“typewriter”) default
+\renewcommand*\familydefault{\rmdefault}
+
+% switch environment so that '@' is a 'standard' letter
+\makeatletter
+
+% redefine the spacing after a subsubsection call
+\let\origsubsubsection\subsubsection
+\renewcommand\subsubsection{\@ifstar{\starsubsubsection}{\nostarsubsubsection}}
+
+\newcommand\nostarsubsubsection[1]
+{\subsubsectionprelude\origsubsubsection{#1}\subsubsectionpostlude}
+
+\newcommand\starsubsubsection[1]
+{\subsubsectionprelude\origsubsubsection*{#1}\subsubsectionpostlude}
+
+% spacing before subsubsection
+\newcommand\subsubsectionprelude{% 
+    \vspace{0em}
+}
+
+% spacing after subsubsection
+\newcommand\subsubsectionpostlude{% 
+    \vspace{-1em}
+}
+
+%-------------------------------------------
+%------ lstlisting properties section ------
+%-------------------------------------------
+
+% use arabic numbering for (code) lstlisting
+\AtBeginDocument	
+{																
+    \renewcommand*{\thelstlisting}{\arabic{lstlisting}}			
+}
+
+% switch back so that '@' is a special character in the following
+\makeatother													
+
+% set some further properties for lstlisting
+\renewcommand{\lstlistingname}{Source Code} 
+\lstset{
+    captionpos 			= b,                   				% place caption at the bottom of the listing
+    numbers 			= left,            					% place line count on the left
+    numbersep 			= 5pt,           					% 5pt distance to source code
+    numberstyle 		= \tiny,       						% font size 'tiny' for enumeration
+    breaklines 			= true,         					% break lines if required
+    breakautoindent 	= true,    							% auto indentation after line break
+    tabsize 			= 2,               					% tab size 2
+    frame 				= shadowbox,						% shadow box
+    rulesepcolor 		= \color{Gray},						% color of shadow
+    framexleftmargin 	= 5mm,								% set margin of left frame
+    basicstyle 			= \ttfamily\footnotesize,			% \footnotesize \small \scriptsize
+    keywordstyle 		= \color{Red}\bfseries,				% color of key words
+    commentstyle 		= \color{ForestGreen}\bfseries, 	% color of comments
+    stringstyle 		= \color{NavyBlue},					% color of strings
+    showspaces			= false,        					% do not show white spaces
+    showstringspaces	= false   							% also do not show white spaces in strings
+}
+
+
+%-------------------------------------------
+%---------- PDF meta information -----------
+%-------------------------------------------
+
+\hypersetup{					
+    pdftitle			= 	{\documenttitle},   			% document title
+    pdfauthor			= 	{\documentauthor},     			% document author
+    pdfsubject			=	{\documenttitle},   			% subect of the document, same as the title
+    bookmarksnumbered	= 	true, 							% enable enumeration for booktabs
+    colorlinks			= 	true,       					% color links?
+    linkcolor			= 	Black,          				% color of links
+    citecolor			= 	Black,        					% color of citations
+    urlcolor			= 	Black,    						% color of URLs
+}
+
+%-------------------------------------------
+%--------- Miscellaneous settings ----------
+%-------------------------------------------
+
+% use this command to buffer the actual page count of Roman page numbering
+% so that the page count can be reused within the reference section
+\ExplSyntaxOn%
+\DeclareExpandableDocumentCommand{\arabicnumeral}{m}
+{
+    \int_from_roman:n { #1 }
+}
+\ExplSyntaxOff
+
+%-- tabularx special column type --%
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+% distance between equations within same environment
+\setlength{\jot}{10pt} 

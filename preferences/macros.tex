@@ -1,0 +1,32 @@
+% !TeX root = ../main.tex
+
+%---------------------------------------------------
+%-- set some custom environments, commands, etc. ---
+%---------------------------------------------------
+
+% example: if you use tables/graphics from other publications, you need to explicitly get 
+% the permission to reprint the content by the publisher
+\newcommand{\ieeecopyright}[1]{\textcopyright { #1} IEEE. Reprinted, with permission.}
+
+
+% example to define a special appearance for the term 'Faster R-CNN'
+\newcommand{\fasterrcnn}[1][]{%
+	\ifthenelse{\equal{#1}{}}{\texttt{Faster R-CNN}}{\texttt{Faster R-CNN R#1-FPN}}%
+}
+
+% example environment to print a gray bar next to the text. This is very useful to highlight 
+% some text passages
+
+\renewenvironment{leftbar}[1][\hsize]
+{%
+    \def\FrameCommand
+    {%
+        
+        {\color{gray}\vrule width 5pt}%
+        %{\color{green}\rule[0pt]{5pt}{\vsize}}%
+        \hspace{0pt}%must no space.
+        \fboxsep=\FrameSep\colorbox{white}%
+    }%
+    \MakeFramed{\hsize#1\advance\hsize-\width\FrameRestore}%
+}
+{\endMakeFramed}

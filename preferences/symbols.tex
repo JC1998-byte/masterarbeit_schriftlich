@@ -1,0 +1,162 @@
+% !TeX root = ../main.tex
+
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+\newcommand{\corresponds}{\hat{=}}
+
+% colors
+\definecolor{confidence}{rgb}{0.12, 0.46, 0.71}
+\definecolor{ece}{rgb}{0.84, 0.15, 0.16}
+
+% digit sets
+\newcommand{\naturaldigits}{\mathbb{N}}
+\newcommand{\realdigits}{\mathbb{R}}
+\newcommand{\realdigitspositive}{\mathbb{R}_{>0}}
+\newcommand{\complexdigits}{\mathbb{Q}}
+
+% probability notation
+\newcommand{\pdf}{f}
+\newcommand{\cdf}{F}
+\newcommand{\ppf}{F^{-1}}
+\newcommand{\prob}{\mathbb{P}}
+\newcommand{\probscore}{p}
+\newcommand{\credibleinterval}{\hat{C}}
+\newcommand{\variationaldist}{f^\ast}
+
+% mathematical operators and matrix operators
+\newcommand{\sampledfrom}{\sim}
+\newcommand{\outerprod}{\otimes}
+\newcommand{\kroneckerprod}{\outerprod}
+\newcommand{\tensorprod}{\outerprod}
+\newcommand{\elementwiseprod}{\odot}
+\newcommand{\possemidefinit}{\succcurlyeq}
+\newcommand{\T}{\top}
+\newcommand{\transposed}{\top}
+
+% Gaussian process symbol
+\newcommand{\gp}{\text{gp}}
+\newcommand{\kernel}{k}
+
+% distributions
+\newcommand{\normaldistribution}{\mathcal{N}}
+\newcommand{\uniformdistribution}{r}
+\newcommand{\betadistribution}{\text{Beta}}
+\newcommand{\dirichletdistribution}{\text{Dir}}
+\newcommand{\cauchydistribution}{\text{Cauchy}}
+\newcommand{\bernoullidistribution}{\text{Bern}}
+\newcommand{\categoricaldistribution}{\text{Cat}}
+
+\newcommand{\expectation}{\mathbb{E}}
+\newcommand{\distvariance}{\mathrm{Var}}
+\newcommand{\distcovariance}{\mathrm{Cov}}
+
+\newcommand{\factorial}{!}
+\newcommand{\plus}{+}
+
+% beta
+\newcommand{\gammafunc}{\Gamma}
+\newcommand{\betafunc}{\text{B}}
+\newcommand{\diracfunc}{\delta}
+\newcommand{\betafunca}{\alpha}
+\newcommand{\betafuncb}{\beta}
+\newcommand{\allbetafunca}{\boldsymbol{\betafunca}}
+\newcommand{\allbetafuncb}{\boldsymbol{\betafuncb}}
+\newcommand{\betaparama}{a}
+\newcommand{\betaparamb}{b}
+\newcommand{\betaparamc}{c}
+\newcommand{\allbetaparama}{\mathbf{\betaparama}}
+\newcommand{\allbetaparamb}{\mathbf{\betaparamb}}
+\newcommand{\betaregressparam}{s}
+\newcommand{\betaratio}{\lambda}
+
+% normal distribution notation
+\newcommand{\mean}{\mu}
+\newcommand{\meanvec}{\boldsymbol{\mu}}
+\newcommand{\stddev}{\sigma}
+\newcommand{\variance}{\sigma^2}
+\newcommand{\cov}{\boldsymbol{\Sigma}}
+\newcommand{\correlation}{\rho}
+\newcommand{\correlationmat}{\Rho}
+\newcommand{\correlationvec}{\boldsymbol{\rho}}
+\newcommand{\decomposed}{\mathbf{L}}
+\newcommand{\diagonal}{\mathbf{D}}
+\newcommand{\quantile}{\tau}
+\newcommand{\identity}{\mathbf{I}}
+
+% cauchy distribution notation
+\newcommand{\cauchymode}{\vartheta}
+\newcommand{\cauchyscale}{\gamma}
+\newcommand{\cauchymodevec}{\boldsymbol{\cauchymode}}
+\newcommand{\cauchyscalevec}{\boldsymbol{\cauchyscale}}
+
+% integral
+\newcommand{\diff}{\mathrm{d}}
+%\newcommand{\diff}{\partial}
+
+% random variates
+\newcommand{\inputvariate}{X}
+\newcommand{\outputvariate}{Y}
+\newcommand{\allinputvariates}{\mathbf{\inputvariate}}
+\newcommand{\alloutputvariates}{\mathbf{\outputvariate}}
+
+% variate sets
+\newcommand{\inputset}{\mathcal{\inputvariate}}
+\newcommand{\outputset}{\mathcal{Y}}
+
+% random variate realization
+\newcommand{\singleinput}{x}
+\newcommand{\singleoutput}{y}
+\newcommand{\allsingleinput}{\mathbf{\singleinput}}
+\newcommand{\allsingleoutput}{\mathbf{\singleoutput}}
+
+
+% ground-truth
+\newcommand{\groundtruthvariate}{\bar{\outputvariate}}
+
+% indices
+\newcommand{\numdims}{K}
+\newcommand{\indexdims}{k}
+
+\newcommand{\numclasses}{\numdims}
+\newcommand{\indexclasses}{\indexdims}
+
+\newcommand{\numsamples}{N}
+\newcommand{\indexsamples}{n}
+
+\newcommand{\numstochastic}{T}
+\newcommand{\indexstochastic}{t}
+
+% neural network symbols
+\newcommand{\neuralnetwork}{h}
+\newcommand{\logit}{z}
+\newcommand{\logitvariate}{Z}
+\newcommand{\parameter}{\theta}
+\newcommand{\allparameters}{\boldsymbol{\theta}}
+\newcommand{\estimatedparameter}{\hat{\parameter}}
+\newcommand{\parameterset}{\Theta}
+
+\newcommand{\loss}{\mathcal{L}}
+\newcommand{\entropy}{H}
+\newcommand{\kldivergence}{D_{\text{KL}}}
+\newcommand{\threshold}{\zeta}
+
+\newcommand{\diag}{\text{diag}}
+\newcommand{\determinant}{\text{det}}
+\newcommand{\ind}{\mathds{1}}
+\newcommand{\indfunc}{v}
+\newcommand{\invindfunc}{w}
+\newcommand{\dataset}{\mathcal{D}}
+
+
+% detectors
+\newcommand{\centerx}{c_x}
+\newcommand{\centery}{c_y}
+\newcommand{\width}{w}
+\newcommand{\height}{h}
+\newcommand{\Width}{W}
+\newcommand{\Height}{H}
+\newcommand{\Channels}{C}
+
+% activation functions
+\newcommand{\sigmoid}{\Phi}
+\newcommand{\softmax}{\Phi_{\text{SM}}}

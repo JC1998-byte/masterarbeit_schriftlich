@@ -1,0 +1,102 @@
+% !TeX spellcheck = de_DE
+
+% header setup - make your document settings here
+\input{preferences/preferences}
+
+% specify some text/environment macros that you need in your document
+\input{preferences/macros}
+
+% 
+\input{preferences/symbols}
+
+% document begin
+\begin{document}
+
+%----------------------------------
+%-- Setup of the Essential Parts --
+%----------------------------------
+
+% use roman page count for essentials part
+\pagenumbering{Roman}
+
+% add frontpage and declaration
+\include{preliminaries/frontpage}
+\include{preliminaries/declaration}
+
+% do not count the frontpage and declaration to the total number of pages
+\setcounter{page}{1}
+
+% add abstract
+\include{preliminaries/abstract}
+
+
+% add table of content, list of figures and list of tables
+\tableofcontents \clearpage
+\listoffigures \clearpage
+\listoftables \clearpage
+
+% add acronyms and nomenclature
+% nomenclature defines the mathematical notation used in your thesis. 
+% If you do not require this, simply comment out the nomenclature
+\include{preliminaries/acronyms} \clearpage
+\include{preliminaries/nomenclature}
+
+\printnomenclature[2cm]%
+\label{last-roman-page}%
+\clearpage
+
+% use arabic page count for main part
+\pagenumbering{arabic}
+
+%--------------------------------------------------
+%-- Main content - include your .tex files here! --
+%--------------------------------------------------
+
+\input{content/introduction.tex}
+\input{content/research.tex}
+\input{content/method.tex}
+\input{content/results.tex}
+\input{content/discussion.tex}
+\input{content/conclusion.tex}
+
+%----------------------------------
+%---- Appendix & Bibliography -----
+%----------------------------------
+
+%--------------------------------------
+%-- DO NOT EDIT THE FOLLOWING LINES! --
+%--------------------------------------
+
+\clearpage
+\appendix 
+
+%------------------------------------------------
+%-- Appendix - add your appendix content here! --
+%------------------------------------------------
+
+\input{appendix/appendix.tex}
+
+%--------------------------------------
+%-- DO NOT EDIT THE FOLLOWING LINES! --
+%--------------------------------------
+
+\clearpage
+
+% for appendix and bibliography, use roman page count again
+\pagenumbering{Roman}
+
+% retrieve last roman page & convert to arabic so that latex understands the actual page count
+\edef\intpagevalue{\getpagerefnumber{last-roman-page}}
+
+% set current page value
+\setcounter{page}{\number\numexpr\expandafter\arabicnumeral\expandafter{\intpagevalue}+1}
+
+%------------------------------------
+%-- Bibliography - no need to edit --
+%------------------------------------
+% ensure bibliography entries are included even if not cited in text
+\nocite{*}
+\bibliographystyle{ieeetr}
+\bibliography{bib/bibliography}
+
+\end{document}

@@ -1,0 +1,43 @@
+% define your mathematical notation here. If you do not have one, you can also skip this
+
+\renewcommand\nomgroup[1]{%
+  \item[\bfseries
+  \ifstrequal{#1}{A}{Statistical Symbols}{%
+  \ifstrequal{#1}{C}{Probability Distributions}{%
+  \ifstrequal{#1}{B}{Functions}{%
+  }}}%
+]}
+
+\nomenclature[Aa]{$\inputvariate, \outputvariate$}{Random variables}
+\nomenclature[Ab]{$\allinputvariates, \alloutputvariates$}{Multivariate random variables $\allinputvariates = (\inputvariate_1, \ldots, \inputvariate_\numdims)^\T$ and $\alloutputvariates = (\outputvariate_1, \ldots, \outputvariate_\numdims)^\T$ of size $\numdims$}
+%\nomenclature[Ac]{$\singleinput, \singleoutput$}{Realizations of random variables}
+\nomenclature[Ad]{$\prob(\inputvariate=\singleinput)$}{Probability for $\inputvariate$ being $\singleinput$}
+\nomenclature[Ae]{$\expectation[\inputvariate]$}{Expectation of $\inputvariate$}
+\nomenclature[Af]{$\distvariance[\inputvariate]$}{Variance of $\inputvariate$}
+\nomenclature[Ag]{$\distcovariance[\inputvariate, \outputvariate]$}{Covariance of $\inputvariate$ and $\outputvariate$}
+\nomenclature[Ah]{$\mean_\inputvariate$}{Mean of $\inputvariate$}
+\nomenclature[Ai]{$\variance_\inputvariate$, $\stddev_\inputvariate$}{Variance and standard deviation of $\inputvariate$}
+\nomenclature[Aj]{$\cov_{\inputvariate,\outputvariate}$}{Covariance matrix of $\inputvariate$ and $\outputvariate$}
+\nomenclature[Ak]{$\pdf_\inputvariate(\singleinput)$}{Probability density function (PDF) of $\inputvariate$}
+\nomenclature[Al]{$\cdf_\inputvariate(\singleinput)$}{Cumulative density function (CDF) of $\inputvariate$}
+\nomenclature[Al]{$\ppf_\inputvariate(\quantile)$}{Percent point function (inverse of CDF) of $\inputvariate$ for any quantile $\quantile \in (0, 1)$}
+
+\nomenclature[Ba]{$\gammafunc(\betafunca)$}{Gamma function: $\gammafunc(\betafunca)=(\betafunca-1)\factorial$ for $\betafunca \in \realdigitspositive$}
+\nomenclature[Bb]{$\betafunc(\betafunca, \betafuncb)$}{Beta function: $\betafunc(\betafunca, \betafuncb) = \frac{\gammafunc(\betafunca)\gammafunc(\betafuncb)}{\gammafunc(\betafunca + \betafuncb)}$ for $\betafunca, \betafuncb \in \realdigitspositive$}
+\nomenclature[Bc]{$\betafunc(\allbetafunca)$}{Multivariate beta function: $\betafunc(\allbetafunca) = \frac{\prod^\numdims_{\indexdims=1}\gammafunc(\betafunca_\indexdims)}{\gammafunc(\sum^\numdims_{\indexdims=1}\betafunca_\indexdims)}$ for $\allbetafunca \in \realdigitspositive^{\numdims}$ with $\numdims$ dimensions}
+
+\nomenclature[Bd]{$\diracfunc(\singleinput)$}{Dirac delta function: $\diracfunc(\singleinput) = +\infty$  if $\singleinput = 0$ else $\diracfunc(\singleinput) = 0$}
+\nomenclature[Be]{$\sigmoid(\singleinput)$}{Sigmoid function: $\sigmoid(\singleinput) = \frac{\exp(\singleinput)}{1 + \exp(\singleinput)} = \frac{1}{1 + \exp(-\singleinput)}$ with $\singleinput \in \realdigits$}
+\nomenclature[Bf]{$\softmax(\singleinput_\indexdims)$}{Softmax function: $\softmax(\singleinput_\indexdims) = \frac{\exp(\singleinput_\indexdims)}{\sum_{\indexdims^\ast=1}^{\numdims} \exp(\singleinput_{\indexdims^\ast})}$ with $\singleinput_\indexdims \in \realdigits$ and $\numdims$ dimensions}
+\nomenclature[Bg]{$\ind(\cdot)$}{Indicator function. Returns $1$ if argument is true, else $0$}
+\nomenclature[Bh]{$\diag(\singleinput_1, \ldots, \singleinput_\numdims)$}{Diagonal matrix operator with diagonal elements $\singleinput_1, \ldots, \singleinput_\numdims$.}
+\nomenclature[Bi]{$\determinant(\cov)$}{Determinant of matrix $\cov$}
+
+%\nomenclature[Ca]{$\uniformdistribution(\singleinput)$}{Uniform distribution}
+\nomenclature[Ca]{$\bernoullidistribution(\singleinput; \parameter)$}{Bernoulli distribution: $\bernoullidistribution(\singleinput; \parameter) = \parameter^\singleinput(1-\parameter)^{1-\singleinput}$ with $\singleinput \in \{0, 1\}$ and $\parameter \in [0, 1]$}
+\nomenclature[Cb]{$\categoricaldistribution(\singleinput; \allparameters)$}{Categorical distribution: $\categoricaldistribution(\singleinput; \allparameters) = \prod_{\indexdims=1}^{\numdims} \parameter_\indexdims^{\ind(\singleinput = \indexdims)}$ with $\singleinput \in \{1, \ldots, \numdims\}$ and $\parameter_\indexdims \in [0, 1]$}
+\nomenclature[Cb]{$\normaldistribution (\singleinput; \mean, \variance)$}{Univariate normal distribution: $\normaldistribution (\singleinput; \mean, \variance) = \frac{1}{\sqrt{2\pi\variance}} \exp\Big(\frac{-1}{2\variance}(\singleinput-\mean)^2\Big)$ where $\variance \in \realdigitspositive$}
+\nomenclature[Cc]{$\normaldistribution(\allsingleinput ; \meanvec, \cov)$}{Mv. normal distribution: $\normaldistribution(\allsingleinput ; \meanvec, \cov) = \frac{1}{\sqrt{(2\pi)^\numdims \text{det}(\cov)}} \exp\Big(-\frac{1}{2} (\allsingleinput-\meanvec)^\T\cov^{-1}(\allsingleinput-\meanvec)\Big)$}
+\nomenclature[Cd]{$\betadistribution(\singleinput ; \betafunca, \betafuncb)$}{Beta distribution: $\betadistribution(\singleinput ; \betafunca, \betafuncb) = \frac{1}{\betafunc(\betafunca, \betafuncb)}\singleinput^{\betafunca-1}(1-\singleinput)^{\betafuncb-1}$ where $\singleinput \in [0,1]$ and $\betafunca, \betafuncb \in \realdigitspositive$}
+\nomenclature[Ce]{$\dirichletdistribution(\allsingleinput ; \allbetafunca)$}{Dirichlet distribution: $\dirichletdistribution(\allsingleinput ; \allbetafunca) = \frac{1}{\betafunc(\allbetafunca)} \prod^\numdims_{\indexdims=1} \singleinput_\indexdims^{\betafunca_\indexdims-1}$ for $\allbetafunca \in \realdigitspositive^{\numdims}$ with $\numdims$ dimensions}
+\nomenclature[Cf]{$\cauchydistribution(\singleinput; \cauchymode, \cauchyscale)$}{Cauchy distribution: $\cauchydistribution(\singleinput; \cauchymode, \cauchyscale) = \frac{1}{\pi}\frac{\cauchyscale}{\cauchyscale^2 + (\singleinput - \cauchymode)^2}$ where $\cauchyscale \in \realdigitspositive$}
