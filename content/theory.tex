@@ -1,0 +1,240 @@
+\chapter{Theoretische Grundlagen und Stand der Forschung}
+\label{chapter:theory}
+
+
+\section{Fahrassistenzsysteme als sicherheitskritische
+Mensch-Maschine-Interaktion}
+\label{sec:fas_sicherheitskritisch}
+Dieses Unterkapitel betrachtet grundlegende theoretische Modelle und Erkenntnisse, welche in der Literatur \cite{Geisler_hci2021} identifiziert wurden und die besonderen Herausforderungen an Gestaltungslösungen im Fahrzeugkontext aufzeigen sollen. Die Erkenntnisse sind einerseits für die Gestaltung einer möglichst realitätsnahen Simulationsumgebung, welche ein Fahrzeug mit seinen Assistenzfunktionen abbildet, relevant. Darüber hinaus werden diese Erkenntnisse für die Gestaltung eines Onbaordings kritisch reflektiert und zueinander in Bezug gesetzt.  
+
+\subsection{Fahraufgaben}
+\label{subsec:fahraufgabe}
+Zur besseren Abgrenzung der Aufgabenbereiche von Fahrer*innen und Assistenzsystemen in einem Fahrzeug, wird an dieser Stelle zunächst erstgenannter definiert. Geisler \cite{Geisler_hci2021} nennt den sicheren Transport vom Ausgangs- zum Zielort als Haupt- oder Primäraufgabe der Fahrer*innen und verweist auf unterstützende Aufgaben, die zur Erfüllung der primären Aufgabe notwendig sind.
+
+\begin{table}[ht]
+\centering
+\caption{Einteilung von Fahraufgaben aus Sicht der Fahrer*innen}
+\label{tab:fahraufgaben}
+
+\begin{tabular}{|p{0.29\textwidth}|p{0.34\textwidth}|p{0.29\textwidth}|}
+\hline
+\textbf{Primäre Aufgabe} &
+\textbf{Sekundäre Aufgabe} &
+\textbf{Tertiäre Aufgabe}
+\\ \hline
+
+Transport der Personen beziehungsweise Güter &
+Zusätzliche fahraufgabenbezogene Tätigkeiten abhängig von primärer Fahraufgabe &
+Nicht verbunden mit der Fahraufgabe
+\\ \hline
+
+Navigation: Planung der Route &
+Interaktion mit anderen Verkehrsteilnehmenden: blinken, hupen, Handzeichen geben &
+Komfort: Klimaanlage, Sitzheizung, Panoramadach, Massagesitz
+\\ \hline
+
+Führung: Festlegung von Soll-Geschwindigkeit und Kurs (Fahrspur), beides in der Regel situationsabhängig &
+Reaktionen auf die Umwelt: Steuerung von Licht, Scheibenwischer, Heckscheibenheizung, Gangwechsel &
+Unterhaltung, Information: Radio und Mediaplayer, Verkehrsinformationen
+\\ \hline
+
+Stabilisierung: Längs- und Querdynamik, das heißt Beschleunigen/Bremsen und Lenken &
+&
+Kommunikation: Telefon, Kurznachrichten
+\\ \hline
+
+Notwendig zur Erreichung des Ziels &
+Erreichung des Ziels auch ohne diese Tätigkeiten möglich, aber mit erheblichen Einschränkungen &
+Erreichung des Ziels auch ohne diese Tätigkeiten möglich
+\\ \hline
+
+Teilweise extrem zeitkritisch (Stabilisierungsaufgabe) &
+Geringe zeitliche Anforderungen &
+Keine zeitlichen Anforderungen
+\\ \hline
+\end{tabular}
+
+\medskip
+{\footnotesize Quelle: Tabelle inhaltlich übernommen aus
+\cite[S.~365]{Geisler_hci2021}.}
+\end{table}
+
+Tabelle \ref{tab:fahraufgaben} zeigt die an Geiser \cite{Geiser1985}, Bubb \cite{bubb2015automobilergonomie} und Donges \cite{donges2015fahrerverhaltensmodelle} angelehnte Einteilung von Fahraufgaben aus Sicht der Fahrer*innen nach Darstellung von Geisler \cite{Geisler_hci2021}. Es wird an dieser Stelle deutlich, dass der große Aufgabenbereich der fahrzeugführenden Person mit teilweise kokurrierenden Aufgaben, für eine selektiv arbeitende menschlichen Aufmerksamkeit \cite{Broadbent1958} eine große Herausforderung darstellt, weswegen eine Priorisierung der Unterstützungstätigkeiten für die Aufgaben obligatorisch erscheint. Geisler \cite{Geisler_hci2021} konstatiert, dass im Hinblick auf Sicherheitsaspekte zudem darauf zu achten sei, dass bei den primären Aufgaben die Beherrschbarkeit der Funktionen und bei tertiären Aufgaben eine möglichst geringe Ablenkung sicherzustellen sind. Die Empfehlungen für die sekundären Aufgaben seien als Kombination der zuletzt genannten Empfehlungen zu verstehen, so der Forscher \cite{Geisler_hci2021}. 
+
+Für diese Masterarbeit sind die Erkenntnisse zentral, da Assistenzsysteme zunächst der Aufgabenart, bei der sie die fahrzeugführende Person unterstützen, zugeordnet werden sollten. Aufbauend darauf, sollten die zuletzt genannten Empfehlungen auch für ein Onboarding einer solchen Assistenzfunktion Beachtung finden, indem bestimmte Informationen, die zur sicheren Erledigung der Aufgabenart zentral sind, priorisiert werden.    
+
+\subsection{Fahrverhalten}
+\label{subsec:ausgewaehlte_assistenzfunktion}
+Das Fahrverhalten der fahrzeugführenden Person ist ein weiterer grundlegender Aspekt im Kontext dieser Forschungsarbeit, der eng mit dem Erkenntnissen von Kapitel \ref{subsec:fahraufgabe} verknüpft ist. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{images/theory/Modell_Rasmussen.png}
+    \caption{Gegenüberstellung von Drei-Ebenen-Modell für zielgerichtete Tätigkeiten des Menschen und Drei-Ebenen-Hierarchie der Fahraufgabe}
+    \label{fig:rasmussen}
+    \medskip
+    {\footnotesize Quelle: Abbildung übernommen aus
+    \cite[S.~19]{donges2015fahrerverhaltensmodelle}.}
+\end{figure}
+
+Geisler \cite{Geisler_hci2021} unterteilt nach Rasmussen \cite{Rasmussen1983} das menschliche Fahrverhalten in drei Ebenen. Abbildung \ref{fig:rasmussen} zeigt die Gegenüberstellung von Verhaltensweisen des Menschen und Fahraufgaben. Der Forscher konstatiert, dass sich die Verhaltensarten im wesentlichen anhand des Ausmaßes der kognitiven Belastung unterscheiden \cite{Geisler_hci2021}. Während das fertigkeitsbasierte Verhalten unbewusst und als reines Reiz-Reaktions-Schema ablaufe, könne die fahrzeugführende Person beim regelbasierten Verhalten immerhin noch auf sequentiell verknüpfte Schritte zurückgreifen, während das wissensbasierte Verhalten ein bewusstes Überlegen erfordere, so Geisler \cite{Geisler_hci2021}. Desweiteren könnten durch Training und Erfahrung die kognitive Belastung reduziert werden, was zu geringeren Reaktions- und Ausführungszeiten sowie geringerer Ablenkung führe \cite{Geisler_hci2021}. Der Forscher schließt, dass Lernförderlichkeit und Sicherheit des Systems eng miteinander verknüpft seien \cite{Geisler_hci2021}.
+
+Für diese Forschungsarbeit bedeutet dies, dass ein Onboarding für Assistenzsysteme den Anteil an kognitiv fordernden Prozessen möglichst minimieren sollte. Fahrer*innen sollten insbesondere in unübersichtlichen Situationen einzelne Hinweise von Assistenzsystemen schnell zuordnen und wiedererkennen können, ohne, aus Sicht der Fahrzeugsicherheit, lange und damit ungünstige Überlegungen durchführen zu müssen. Außerdem sollte bei Assistenzsystemen, welche möglicherweise seltener zum Einsatz kommen, ein ausführlicheres Onboarding stattfinden, da die Fahrer*innen auf weniger Erfahrungen zurückgreifen können.  
+
+\section{Human Factors bei der Nutzung von Fahrassistenzsystemen}
+\label{sec:human_factors}
+
+\subsection{Wahrnehmung, Aufmerksamkeitssteuerung und mentale Modelle}
+\label{subsec:wn_as_mm}
+
+\subsubsection{Visuelle Wahrnehmung}
+\label{subsubsec:visuelle_wahrnehmung}
+Innerhalb eines Fahrzeugs nutzt der Mensch mehrere Wahrnehmungskanäle, um Informationen wahrzunehmen. Geisler \cite{Geisler_hci2021} nennt neben der visuellen die auditive Wahrnehmung und die taktile Wahrnehmung als wichtigste Informationskanäle.
+
+Bzgl. der visuellen Wahrnehmung sei zentral, dass Menschen trotz eines ca. 180° großen Sichtfeldes nur in einem Bereich von ca. 2° scharf sehen können \cite{Geisler_hci2021}. Außerdem benötige das Scharfstellen der Augen (Akkomodation) sowie die Anpassung der Pupillengrößen an die umgebende Helligkeit (Adaption) Zeit, was mit zunehmenden Alter einer Person an Effektivität verliere, so Geisler \cite{Geisler_hci2021}. Akkomodation sei im Fahrzeugkontext insbesondere dort relevant, wo Blickabwendungen von der Straße aufgrund von Anzeigeelementen im Fahrzeug nötig werden, während Adaption bei großen Helligkeitsunterschieden, welche z. B. durch die Sonne hervorgerufen werden, beachtet werden müssen \cite{Geisler_hci2021}.
+
+Für diese Forschungsarbeit lässt sich ableiten, dass für ein kontextspezifisches Onboarding, welches während der Fahrt stattfindet, insbesondere die Akkomodation eine zentrale Rolle spielt. Es erscheint vor dem Hintergrund der vorgestellten Erkenntnisse sinnvoll, dass Informationen nahe des Blickfelds erscheinen, um langfristige Anpassungsprozesse innerhalb des Auges vermeiden zu können.
+
+\subsubsection{Auditive Wahrnehmung}
+\label{subsubsec:auditive_wahrnehmung}
+Im Kontext von auditiver Wahrnehmung innerhalb eines Fahrzeugs, sind insbesodnere Warn- und Signaltöne von entscheidender Bedeutung \cite{Geisler_hci2021}. Um eine verlässliche Wahrnehmung von Warn- und Signaltönen gewährleisten zu können, müssen diese hinsichtlich ihrer Beschaffenheit so gewählt werden, dass sie unter Einbezug von verschiedenen Umgebungen sowie Störfaktoren problemlos wahrgenommen werden können \cite{Geisler_hci2021}. Außerdem sollten Klangfarbe, Wiederholfrequenz und Tonhöhe in Abhängigkeit der Dringlichkeit variiert werden und nach Möglichkeit auch eine räumliche Zuordnung des Tons möglich sein \cite{Geisler_hci2021}.
+
+Auch in diesem Fall sind die Erkenntnisse schwerpunktmäßig für ein kontextspezifisches Onboarding während der Fahrt relevant. Trotzdessen, dass eine genaue Lokalisation eines Tons in einer Simulatorumgebung möglicherweise nur mit geeigneten Kopfhörern sinnvoll erscheint, können Klangfarbe, Wiederholfrequenz und Tonhöhe durchaus variiert werden. Dabei sollte für Warnungen
+
+\subsubsection{Taktile Wahrnehmung}
+\label{subsubsec:taktile_wahrnehmung}
+Die taktile Wahrnehmung habe den zentralen Vorteil, dass es eine große räumliche Nähe zwischen den Extremitäten der fahrzeugführenden Person und dem zu betätigenden Steuerelement gebe, sodass oft keine Zuordnung zwischen Information und Steuerelemtent erfolgen müsse \cite{Geisler_hci2021}. Denkbar seien Vibrationen innerhalb des Sitzes, am Lenkrad oder an einem der Fußpedale des Fahrzeugs \cite{Geisler_hci2021}. 
+
+Aufgrund der Limitationen eines Fahrsimulators, können taktile Informationen nur über die Vibrationen eines Lenkrads bereitgestellt werden. Für die Gestaltung eines Onbaordings erscheint auch dies schwerpunktmäßig für ein kontextspezifisches Onbaording relevant. 
+
+\subsection{Aufmerksamkeitssteuerung}
+\label{subsec:aufmerksamkeitssteuerung}
+Insbesondere für die visuelle Wahrnehmung, bei der mehrere räumlich verteilte optische Reize, trotz eines nur vergleichsweise kleinen Bereichs des scharfen Sehens miteinander konkurrieren, ist es wichtig zu erörtern, wie die menschliche Aufmerksamkeitssteuerung konzeptionell arbeitet. In der Literatur \cite{Geisler_hci2021} wird zu diesem Zweck oft das SEEV-Modell nach Wickens \cite{Wickens2008} aufgeführt, welches die Wahrscheinlichkeit für die visuelle Wahrnehmung eines Reizes angibt, wenn mehrere miteinander konkurrierende visuelle Reize potentiell ebenfalls wahrgenommen werden könnten. Abbildung \ref{fig:wickens} zeigt den Aufbau des SEEV-Modells nach Wickens \cite{Wickens2008}. Das Modell unterscheidet nach Geisler \cite{Geisler_hci2021} im wesentlichen zwischen Bottom-up, also Aspekten, die durch das Systemdesign direkt beeinflusst werden können und Top-Down, was primär durch Erwartungen und mentale Modelle beeinflusst wird.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/theory/Modell_Wickens.png}
+    \caption{SEEV-Modell der Informationsverarbeitung nach Wickens}
+    \label{fig:wickens}
+    \medskip
+    {\footnotesize Quelle: Entnommen aus \cite[S.~23]{Eisma2021} nach \cite{Wickens2008}.}
+\end{figure}
+
+Neben den bereits zuvor in Kapitel \ref{subsubsec:visuelle_wahrnehmung} diskutierten Aspekten Auffälligkeit und Anstrengung, sollte für die Entwicklung eines Onbaordings auch die Top-Down-Parameter Erwartbarkeit und Wert beachtet werden. Insbesondere bei kontextspezifischen Onboardings sollten Informationen dort vermittelt werden, wo es die fahrzeugführende Person erwartet. Außerdem sollte der Wert einer sicherheitskritischen Information durch die zuvor diskutierten Gestaltungsmöglichkeiten unterstrichen werden.
+
+\subsubsection{Mentale Modelle}
+\label{subsubsec:mentale_modelle}
+abc
+
+\subsection{Situationsbewusstsein}
+\label{subsec:situationsbewusstsein}
+Geisler \cite{Geisler_hci2021} verweist darauf, dass die im vorherigen Unterkapitel \ref{subsec:wn_as_mm} diskutierten Aspekte nur der erste Teil eines zweistufigen kognitiven Prozesses seien. Der Forscher konstatiert, dass der zweite Teil aus dem Verstehen des Wahrgenommenen, einer Projektion in die Nahe Zukunft und dem Ableiten angemessener Handlungsschritte bestünde \cite{Geisler_hci2021}. Der genauen Ablauf wird in Abbildung \ref{fig:endsley} veranschaulicht. In der Literatur \cite{Geisler_hci2021} wird darauf hingewiesen, dass ein vollständiges Situationsbewusstsein erst nach einem vollständigen Durchlauf aller drei illustrierten Stufen entstehen kann. Als eine mögliche Fehlschlagsursache wird die begrenzte menschliche kognitive Leistungsfähigkeit in Bezug auf Multitasking genannt \cite{Geisler_hci2021}. Die eigentliche Entscheidungsfindung kann schlussendlich automatisiert oder durch Abrufen von zusätzlichen Informationen aus dem Langzeitgedächtnis erfolgen \cite{Geisler_hci2021}. Als eine große Stärke des Modells wird aufgeführt, dass es dazu beitragen könne, den technischen Unterstützungsbedarf für eine fahrzeugführende Person zu ermitteln, da es auch äußere Einflüsse salient mache \cite{Geisler_hci2021}.    
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{images/theory/Modell_Endsley.png}
+    \caption{Modell des Situationsbewusstseins in dynamischer Entscheidungsfindung nach Endsley}
+    \label{fig:endsley}
+    \medskip
+    {\footnotesize Quelle: Entnommen aus \cite[S.~3]{Endsley2000Chapter}.}
+\end{figure}
+
+Zuletzt wird in der Literatur \cite{Geisler_hci2021} auf die Gefahr von einem negativen Einfluss steigender Automatisierung in Fahrzeugen auf das Situationsbewusstsein der Fahrer*innen hingewiesen, da insbesondere fehlerhafte vollautomatische Handlungen oder Handlungsempfehlungen zu Verwirrungen führen könnten. Es wird zudem ausdrücklich davon gesprochen, dass zusätzliche Erläuterungen des Systems in der Situation zu einer Besserung dieser Problematiken beitragen können \cite{Geisler_hci2021}. Dies stellt die Notwendigkeit für ein Onbaording, insbesondere eines kontextspezifischen, noch einmal besonders deutlich heraus. Für neue Assistenzfunktionen, deren Verhaltensweisen und Gründe für ein Verhalten weniger bekannt sind, ergäbe  sich möglicherweise mithilfe eines geeigneten Onboardings eine Chance für einen erheblichen Sicherheitsgewinn durch ein besseres Situationsbewusstsein.  
+
+
+
+\subsection{Vertrauen, Reliance und Akzeptanz}
+\label{subsec:vertrauen_akzeptanz}
+abc
+
+\subsection{Lernen und Anpassung an Fahrassistenzsysteme}
+\label{subsec:lernen_anpassung}
+abc
+
+
+\section{Defizite der gegenwärtigen Informationsvermittlung}
+\label{sec:informationsdefizite}
+
+\subsection{Fehlvorstellungen und nicht intendierte Nutzung}
+\label{subsec:fehlvorstellungen_fehlgebrauch}
+abc
+
+\subsection{Fahrzeughandbücher, Fahrzeugkauf und Fahrausbildung}
+\label{subsec:informationsquellen}
+abc
+
+\subsection{Kommunikation von Systemfähigkeiten und Systemgrenzen}
+\label{subsec:kommunikation_systemgrenzen}
+abc
+
+\subsection{Anforderungen an die Fahrer*innenbildung}
+\label{subsec:anforderungen_fahrerbildung}
+abc
+
+
+\section{Training und Onboarding für Fahrassistenzsysteme}
+\label{sec:training_onboarding}
+
+\subsection{Begriffsverständnis und Ziele des Onboardings}
+\label{subsec:onboarding_begriff}
+abc
+
+\subsection{Lerninhalte eines Onboardings}
+\label{subsec:onboarding_lerninhalte}
+abc
+
+\subsection{Zeitpunkt und Nutzungskontext der Informationsvermittlung}
+\label{subsec:onboarding_zeitpunkt}
+abc
+
+\subsection{Vermittlungsformen und Interaktionskonzepte}
+\label{subsec:onboarding_vermittlungsformen}
+abc
+
+\subsection{Motivation, Personalisierung und adaptive Unterstützung}
+\label{subsec:onboarding_adaptivitaet}
+abc
+
+\subsection{Empirische Befunde zur Wirksamkeit}
+\label{subsec:onboarding_wirksamkeit}
+abc
+
+
+\section{Partizipative Entwicklung von In-Car-Onboardings}
+\label{sec:partizipative_entwicklung}
+
+\subsection{Grundlagen des partizipativen Designs}
+\label{subsec:grundlagen_partizipatives_design}
+abc
+
+\subsection{Nutzer*innen als Expert*innen ihrer Nutzungserfahrungen}
+\label{subsec:nutzende_expertinnen}
+abc
+
+\subsection{Überführung von Nutzer*innenbedarfen in Gestaltungsanforderungen}
+\label{subsec:anforderungsableitung}
+abc
+
+
+\section{Evaluation von Onboardings für Fahrassistenzsysteme}
+\label{sec:evaluation_onboarding}
+
+\subsection{Evaluationskriterien und Zielgrößen}
+\label{subsec:evaluationskriterien}
+abc
+
+\subsection{Erfassung mentaler Modelle und Systemverständnis}
+\label{subsec:messung_mentale_modelle}
+abc
+
+\subsection{Verhaltens- und leistungsbezogene Evaluation}
+\label{subsec:verhaltensmessung}
+abc
+
+\subsection{Fahrsimulatoren als Evaluationsumgebung}
+\label{subsec:fahrsimulator}
+abc
+
+
+\section{Synthese des Forschungsstands und Forschungslücke}
+\label{sec:synthese_forschungsluecke}
