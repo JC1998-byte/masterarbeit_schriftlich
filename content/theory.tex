@@ -2,10 +2,10 @@
 \label{chapter:theory}
 
 
-\section{Fahrassistenzsysteme als sicherheitskritische
+\section{Fahrzeugkontext als sicherheitskritische
 Mensch-Maschine-Interaktion}
 \label{sec:fas_sicherheitskritisch}
-Dieses Unterkapitel betrachtet grundlegende theoretische Modelle und Erkenntnisse, welche in der Literatur \cite{Geisler_hci2021} identifiziert wurden und die besonderen Herausforderungen an Gestaltungslösungen im Fahrzeugkontext aufzeigen sollen. Die Erkenntnisse sind einerseits für die Gestaltung einer möglichst realitätsnahen Simulationsumgebung, welche ein Fahrzeug mit seinen Assistenzfunktionen abbildet, relevant. Darüber hinaus werden diese Erkenntnisse für die Gestaltung eines Onbaordings kritisch reflektiert und zueinander in Bezug gesetzt.  
+Zunächst sollen in diesem Unterkapitel Grundlagen in Bezug auf die Mensch-Maschine-Interaktion im Fahrzeugkontext anhand der Literatur \cite{Geisler_hci2021} diskutiert werden. Insbesondere die Rolle der fahrzeugführenden Person wird kritisch reflektiert und anhand des aktuellen Forschungsstandes eingeordnet. 
 
 \subsection{Fahraufgaben}
 \label{subsec:fahraufgabe}
@@ -81,8 +81,9 @@ Geisler \cite{Geisler_hci2021} unterteilt nach Rasmussen \cite{Rasmussen1983} da
 
 Für diese Forschungsarbeit bedeutet dies, dass ein Onboarding für Assistenzsysteme den Anteil an kognitiv fordernden Prozessen möglichst minimieren sollte. Fahrer*innen sollten insbesondere in unübersichtlichen Situationen einzelne Hinweise von Assistenzsystemen schnell zuordnen und wiedererkennen können, ohne, aus Sicht der Fahrzeugsicherheit, lange und damit ungünstige Überlegungen durchführen zu müssen. Außerdem sollte bei Assistenzsystemen, welche möglicherweise seltener zum Einsatz kommen, ein ausführlicheres Onboarding stattfinden, da die Fahrer*innen auf weniger Erfahrungen zurückgreifen können.  
 
-\section{Human Factors bei der Nutzung von Fahrassistenzsystemen}
+\section{Human Factors im Fahrzeugkontext}
 \label{sec:human_factors}
+Dieses Unterkapitel betrachtet grundlegende theoretische Modelle und Erkenntnisse, welche in der Literatur \cite{Geisler_hci2021,Geisler_autonom2021} identifiziert wurden und die besonderen Herausforderungen an Gestaltungslösungen im Fahrzeugkontext aufzeigen sollen. Die Erkenntnisse sind einerseits für die Gestaltung einer möglichst realitätsnahen Simulationsumgebung, welche ein Fahrzeug mit seinen Assistenzfunktionen abbildet, relevant. Darüber hinaus werden diese Erkenntnisse für die Gestaltung eines Onbaordings kritisch reflektiert und zueinander in Bezug gesetzt.
 
 \subsection{Wahrnehmung, Aufmerksamkeitssteuerung und mentale Modelle}
 \label{subsec:wn_as_mm}
@@ -109,6 +110,9 @@ Aufgrund der Limitationen eines Fahrsimulators, können taktile Informationen nu
 
 \subsection{Aufmerksamkeitssteuerung}
 \label{subsec:aufmerksamkeitssteuerung}
+
+\subsubsection{Informationsverarbeitung}
+\label{subsubsec:informationsverarbeitung}
 Insbesondere für die visuelle Wahrnehmung, bei der mehrere räumlich verteilte optische Reize, trotz eines nur vergleichsweise kleinen Bereichs des scharfen Sehens miteinander konkurrieren, ist es wichtig zu erörtern, wie die menschliche Aufmerksamkeitssteuerung konzeptionell arbeitet. In der Literatur \cite{Geisler_hci2021} wird zu diesem Zweck oft das SEEV-Modell nach Wickens \cite{Wickens2008} aufgeführt, welches die Wahrscheinlichkeit für die visuelle Wahrnehmung eines Reizes angibt, wenn mehrere miteinander konkurrierende visuelle Reize potentiell ebenfalls wahrgenommen werden könnten. Abbildung \ref{fig:wickens} zeigt den Aufbau des SEEV-Modells nach Wickens \cite{Wickens2008}. Das Modell unterscheidet nach Geisler \cite{Geisler_hci2021} im wesentlichen zwischen Bottom-up, also Aspekten, die durch das Systemdesign direkt beeinflusst werden können und Top-Down, was primär durch Erwartungen und mentale Modelle beeinflusst wird.
 
 \begin{figure}[ht]
@@ -124,7 +128,7 @@ Neben den bereits zuvor in Kapitel \ref{subsubsec:visuelle_wahrnehmung} diskutie
 
 \subsubsection{Mentale Modelle}
 \label{subsubsec:mentale_modelle}
-Die Bedeutung von mentalen Modellen für die visuelle Informationsverarbeitung zeigt Abbildung \ref{fig:wickens} in Kapitel \ref{subsec:aufmerksamkeitssteuerung}. Allerdings muss an dieser Stelle noch eine Definition und Einordnung von mentalen Modellen erfolgen. Feinauer et al. \cite{feinauer2023first} verstehen mentale Modelle als Wissensstrukturen, die u. a. das Verständnis des Systemumfangs, der Funktionalität und der Gründe für das Systemverhalten umfassen. Norman \cite{Norman1986} beschreibt mentale Modelle als interne Vorstellungen eine*r Nutzer*in darüber, wie ein technisches System aufgebaut ist und funktioniert. Es entsteht auf Grundlage der wahrgenommenen Systeminformationen (System Image) und kann von dem ursprünglichen Designmodell des Entwicklers abweichen \cite{Norman1986}. Abbildung \ref{fig:norman} illustriert die Entstehung eines mentalen Modells.
+Die Bedeutung von mentalen Modellen für die visuelle Informationsverarbeitung zeigt Abbildung \ref{fig:wickens}. Allerdings muss an dieser Stelle noch eine Definition und Einordnung von mentalen Modellen erfolgen. Feinauer et al. \cite{feinauer2023first} verstehen mentale Modelle als Wissensstrukturen, die u. a. das Verständnis des Systemumfangs, der Funktionalität und der Gründe für das Systemverhalten umfassen. Norman \cite{Norman1986} beschreibt mentale Modelle als interne Vorstellungen eine*r Nutzer*in darüber, wie ein technisches System aufgebaut ist und funktioniert. Es entsteht auf Grundlage der wahrgenommenen Systeminformationen (System Image) und kann von dem ursprünglichen Designmodell des Entwicklers abweichen \cite{Norman1986}. Abbildung \ref{fig:norman} illustriert die Entstehung eines mentalen Modells. Die Bedeutung von mentalen Modellen, wird im Fahrzeugkontext als wesentlich für eine korrekte und sichere Nutzung eines Fahrzeuges beschrieben \cite{feinauer2022potential}.
 
 \begin{figure}[ht]
     \centering
@@ -208,23 +212,36 @@ Fahrzeugs als Gesamtsystem, sondern die Nutzung ausgewählter
 Fahrassistenzfunktionen betrachtet wird, stellt das CTAM den
 passenderen theoretischen Bezugsrahmen dar.
 
-\section{Defizite der gegenwärtigen Informationsvermittlung}
+\section{Defizite der gegenwärtigen Informationsvermittlung in Bezug auf ADAS}
 \label{sec:informationsdefizite}
+
+Nachdem in den Kapiteln \ref{sec:fas_sicherheitskritisch} und \ref{sec:human_factors} die Rolle der fahrzeugführenden Person sowie grundlegende Modelle und Erkenntnisse für Gestaltungslösungen im Fahrzeugkontext diskutiert wurden, werden in diesem Unterkapitel Defizite bei der Informationsvermittlung in Bezug auf Fahrassistenzsysteme aufgezeigt. Im Folgenden wird die Begriffichkeit Advanced Driving Assistance Systems (ADAS) für Systeme verwendet, die Fahrer*innen bei der Fahraufgabe unterstützen. Die Unterstützung kann durch die Bereitstellung von Informationen und
+Warnungen sowie durch zeitweise oder dauerhafte Eingriffe in die
+Längs- und/oder Querführung des Fahrzeugs erfolgen. ADAS ersetzen
+die fahrzeugführende Person jedoch nicht. Die Verantwortung für die
+Fahrzeugsteuerung und die Überwachung der Umgebung sowie der
+Systemleistung verbleibt bei ihr \cite{UNECE2024ADAS}.
 
 \subsection{Fehlvorstellungen und nicht intendierte Nutzung}
 \label{subsec:fehlvorstellungen_fehlgebrauch}
-abc
+Ayoub et al. \cite{ayoub2022cause} führten ein Literaturreview zu ADAS-Limitationen und Lösungen durch und analysierten Verbraucherbeschwerden aus einer Datenbank. Laut den Forscher*innen \cite{ayoub2022cause} seien Problematiken in Bezug auf ADAS oft mit menschlichem Fehlverhalten assoziiert, wozu missbräuchliche Nutzung, Nicht-Nutzung, falsches Vertrauen, Übervertrauen und Missverständnisse über Systemfähigkeiten und Systemgrenzen zählen würden. Die Forschungsarbeit \cite{ayoub2022cause} beschreibt mit Regen, Schnee, Nebel, Eis, Gegenlicht, Dunkelheit, verdeckten oder unklaren Fahrbahnmarkierungen, schlechten Straßenbedignungen oder verdeckten Sensoren auch eine Reihe von Umweltgrenzen, welche die Systemleistung negativ beeinträchtigen können. Die Verbraucherbeschwerden sähen die zentrale Ursache jedoch nicht im eigenem Fehlverhalten, welches die Grenzen der Systeme missachte, sondern in generellen Fahrzeug- und Systemproblemen, so die Forscher*innen \cite{ayoub2022cause}. Besonders häufig genannt wurden unbekannte Ursachen, Fehlalarme, Nicht-Reagieren des Systems, Rückrufe sowie Sensor- und Software-Probleme \cite{ayoub2022cause}. Auch die an die Problematiken anschließenden Folgen wurden untersucht. Demnach seien ein ADAS-Ausfall, starkes Bremsen, Warnmeldungen, Kollisionen und Beinahe-Kollisionen jene Aspekte, welche am häufigsten genannt wurden \cite{ayoub2022cause}. Außerdem konnten ADAS-spezifische Unterschiede zwischen den Systemen beobachtet werden, sodass bspw. bei einem Notbremsungs-System häufiger Fehlalarme aufträten, während bei einem Spurhalteassistent vermehrt Probleme bzgl. eines Nicht-Reagierens zu beobachten seien \cite{ayoub2022cause}. 
 
-\subsection{Fahrzeughandbücher, Fahrzeugkauf und Fahrausbildung}
+Für das Design eines Onboardings für Assistenzsysteme lässt sich ableiten, dass Systemgrenzen klar und transparent kommuniziert werden müssen. Darüber hinaus sollten Onboardings möglichst funktionsspezifisch gestaltet sein, sodass eine oberflächliche Erklärung nicht zielführend erscheint.
+
+Novakazi et al. \cite{novakazi2025mind} stützen diese Erkenntnisse. Zu diesem Zweck führten Novazaki et al. \cite{novakazi2025mind} eine Studie durch, in der 16 Teilnehmer*innen auf öffentlichen Straßen in einem modifizierten Volvo X90 mit zwei unterschiedlichen Interfaces fuhren. Während das erste Interface Informationen zu automatisierten Fahrfunktionen auf das nötigste reduzierte, wurde das zweite expliziter gestaltet, mit klaren visuellen Hinweisen zu Systemstatus, Verantwortung und Automationsmodus \cite{novakazi2025mind}. Es zeigte sich, dass auch jene Teilnehmer*innen, welche über das informationstechnisch reichhaltigere Interface verfügten, auffällig viele Fehler machten \cite{novakazi2025mind}. Die Autor*innen \cite{novakazi2025mind} argumentieren, dass Missbrauch und Fehlbedienung von automatisierten Fahrfunktionen demnach nicht allein durch UI-Probleme erklärbar seien. Stattdessen würden vorherige Erwartungen, Medienbilder, Erfahrungen mit anderen Assistenzsystemen und falsche Vorstellungen über Systemfähigkeiten eine zentrale Rolle spielen, so die Forscher*innen \cite{novakazi2025mind}. 
+
+Diese Erkenntnisse sind für die Entwicklung eines eigenen Onbaordings zentral, da sie darauf hindeuten, dass ein Onbaording nicht isoliert von Ereignissen aus der Vergangenheit betrachtet werden kann. Vielmehr müssen vorbestehende Erwartungen teilweise aktiv korrigiert werden. Außerdem sollten die Unterschiede zwischen Assistenz und Automation noch einmal besonders betont werden, um die Sicherheit zu erhöhen.
+
+Auch der Einfluss der im Kaptitel \ref{subsec:aufmerksamkeitssteuerung} beschriebenen mentalen Modelle, spielt in diesem Zusammenhang eine große Rolle. Gaspar et al. \cite{gaspar2020impact} untersuchten in einer Studie, wie die Qualität des mentalen Modells von Fahrerinnen und Fahrern zu Adaptive Cruise Control (ACC) ihre Leistung in kritischen Grenzsituationen beeinflusst. Die Gruppe der Fahrer*innen war divers hinsichtlich der Fahrerfahrung und des Alters, und unterschied sich demnach im Umfang und Qualität des mentalen Modells zu dieser Assistenzfunktion \cite{gaspar2020impact}. Insbesondere das Verständnis über die Grenzen des Systems, war in der Gruppe mit einem schwachen mentalen Modell deutlich weniger stark ausgeprägt, als bei Vorhandensein eines starken mentalen Modells \cite{gaspar2020impact}. Ein starkes mentales Modell, führte zudem zu einem schnelleren Eingreifen, wenn ACC nicht reagierte, während Personen mit einem schwachen mentalen Modell Hindernissen deutlich näher kamen \cite{gaspar2020impact}.
+
+Da die Güte des mentalen Modells mit einfachen Fragen zur Assistenzfunktion überprüfbar war \cite{gaspar2020impact}, könnte dies auch für ein Onboarding umgesetzt werden, sodass Onboardings mit einer unterschiedlichen Informationstiefe angeboten werden könnten. Allerdings ist die wesentliche Erkenntnis in diesem Fall, dass mentale Modelle als sicherheitsrelevant angesehen werden müssen.
+
+\subsection{Fahrzeughandbücher, Demografie, Fahrzeugkauf und Fahrausbildung}
 \label{subsec:informationsquellen}
 abc
 
 \subsection{Kommunikation von Systemfähigkeiten und Systemgrenzen}
 \label{subsec:kommunikation_systemgrenzen}
-abc
-
-\subsection{Anforderungen an die Fahrer*innenbildung}
-\label{subsec:anforderungen_fahrerbildung}
 abc
 
 
