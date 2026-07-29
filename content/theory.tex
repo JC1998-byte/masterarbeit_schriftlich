@@ -9,7 +9,7 @@ Zunächst sollen in diesem Unterkapitel Grundlagen in Bezug auf die Mensch-Masch
 
 \subsection{Fahraufgaben}
 \label{subsec:fahraufgabe}
-Zur besseren Abgrenzung der Aufgabenbereiche von Fahrer*innen und Assistenzsystemen in einem Fahrzeug, wird an dieser Stelle zunächst erstgenannter definiert. Geisler \cite{Geisler_hci2021} nennt den sicheren Transport vom Ausgangs- zum Zielort als Haupt- oder Primäraufgabe der Fahrer*innen und verweist auf unterstützende Aufgaben, die zur Erfüllung der primären Aufgabe notwendig sind.
+Zur besseren Abgrenzung der Aufgabenbereiche von Fahrer*innen und Fahrassistenzsystemen, wird an dieser Stelle zunächst erstgenannter definiert. Geisler \cite{Geisler_hci2021} nennt den sicheren Transport vom Ausgangs- zum Zielort als Haupt- oder Primäraufgabe der Fahrer*innen und verweist auf unterstützende Aufgaben, die zur Erfüllung der primären Aufgabe notwendig sind.
 
 \begin{table}[ht]
 \centering
@@ -70,7 +70,7 @@ Das Fahrverhalten der fahrzeugführenden Person ist ein weiterer grundlegender A
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{images/theory/Modell_Rasmussen.png}
-    \caption{Gegenüberstellung von Drei-Ebenen-Modell für zielgerichtete Tätigkeiten des Menschen und Drei-Ebenen-Hierarchie der Fahraufgabe}
+    \caption{Gegenüberstellung von Drei-Ebenen-Modell für zielgerichtete Tätigkeiten des Menschen und Drei-Ebenen-Hierarchie der Fahraufgabe nach Rasmussen}
     \label{fig:rasmussen}
     \medskip
     {\footnotesize Quelle: Abbildung übernommen aus
@@ -212,7 +212,7 @@ Fahrzeugs als Gesamtsystem, sondern die Nutzung ausgewählter
 Fahrassistenzfunktionen betrachtet wird, stellt das CTAM den
 passenderen theoretischen Bezugsrahmen dar.
 
-\section{Defizite der gegenwärtigen Informationsvermittlung in Bezug auf ADAS}
+\section{Defizite der gegenwärtigen Informationsvermittlung in Bezug auf ADAS und automatisiertes Fahren}
 \label{sec:informationsdefizite}
 
 Nachdem in den Kapiteln \ref{sec:fas_sicherheitskritisch} und \ref{sec:human_factors} die Rolle der fahrzeugführenden Person sowie grundlegende Modelle und Erkenntnisse für Gestaltungslösungen im Fahrzeugkontext diskutiert wurden, werden in diesem Unterkapitel Defizite bei der Informationsvermittlung in Bezug auf Fahrassistenzsysteme aufgezeigt. Im Folgenden wird die Begriffichkeit Advanced Driving Assistance Systems (ADAS) für Systeme verwendet, die Fahrer*innen bei der Fahraufgabe unterstützen. Die Unterstützung kann durch die Bereitstellung von Informationen und
@@ -236,13 +236,35 @@ Auch der Einfluss der im Kaptitel \ref{subsec:aufmerksamkeitssteuerung} beschrie
 
 Da die Güte des mentalen Modells mit einfachen Fragen zur Assistenzfunktion überprüfbar war \cite{gaspar2020impact}, könnte dies auch für ein Onboarding umgesetzt werden, sodass Onboardings mit einer unterschiedlichen Informationstiefe angeboten werden könnten. Allerdings ist die wesentliche Erkenntnis in diesem Fall, dass mentale Modelle als sicherheitsrelevant angesehen werden müssen.
 
-\subsection{Fahrzeughandbücher, Demografie, Fahrzeugkauf und Fahrausbildung}
+\subsection{Fahrzeughandbücher, Fahrzeugkauf und Fahrausbildung}
 \label{subsec:informationsquellen}
-abc
+In diesem Unterkapitel sollen Faktoren für die Nutzung von ADAS untersucht werden, welche nicht direkt durch das Verhalten oder die Vorstellungen der Fahrer*innen bedingt sind.
+
+\subsubsection{Fahrzeughandbücher}
+\label{subsubsec:fahrzeughandbücher}
+In der Literatur \cite{oviedo2021flick} wird kritisiert, dass klassische Fahrzeughandbücher den Anforderungen an ein ausreichendes Training für Fahrassistenzsysteme nicht gerecht würden. Oviedo-Trespalacios et al. \cite{oviedo2021flick} führten dazu eine Inhaltsanalyse von Fahrzeughandbüchern der neun meistverkauften Fahrzeuge in Australien durch. Inhalte seien oft nicht standardisiert, Warnungen vor möglicher Verwirrung fehlten oft und viele Querverweise erschwerten das Leseverständnis, so die Forscher*innen \cite{oviedo2021flick}. Auf der anderen Seite würden Systemgrenzen und Fehler meist aber erklärt \cite{oviedo2021flick}. Außerdem muss an dieser Stelle Erwähnung finden, dass es sich um Fahrzeuge aus dem Jahr 2018 handelt, weswegen nicht sichergestellt werden kann, dass die Ergebnisse auf neuere Fahrzeuge übertragbar sind.
+
+Allerdings werden die Erkenntnisse durch weitere Studien \cite{detjen2021supporting, casner2019we} gestützt. Detjen et al. \cite{detjen2021supporting} konstatieren, dass klassische Fahrzeughandbücher u. a. aufgrund der fehlenden räumlichen Nähe zu den einzelnen Komponenten des Fahrzeugs und Verwechslungsgefahr zu Schulungszwecken schlechter geeignet wären, als bspw. multimodale Ansätze. In einer Realweltstudie mit 26 Erstnutzer*innen eines Tesla Model S zeigte sich, dass ein multimodaler Ansatz mittels Augmented-Reality Anleitungen als hedonisch positiver, interessanter, motivierender und angenehmer erlebt wurde, als eine Anleitung im Stil eines klassischen Fahrzeughandbuchs \cite{detjen2021supporting}. Auch wenn sich bei der gestellten Aufgabe (ein Einparkvorgang) keine signifikanten Unterschiede hinsichtlich Vertrauen, Akzeptanz oder Systemwissen ergaben, war die tatsächliche Bedienleistung für den multimodalen Ansatz sigifikant besser, als in der Gruppe mit einer klassischen Anleitung \cite{detjen2021supporting}. 
+
+Für ein Onboarding lässt sich ableiten, dass ein multimodaler Ansatz, der räumliche Nähe vermittelt, sich als vielversprechend erweist. Ein Onboarding sollte mehr leisten, als nur Funktionen zu erklären, indem konkrete Nutzungssituationen praxisnah und unter Einbezug aller sinnvollen Informationskanäle beschrieben werden. Dabei sollte das Vertrauen in die Assistenzsysteme nicht einfach maximiert, sondern kalibriert werden.
+
+\subsubsection{Fahrzeugkauf}
+\label{subsubsec:fahrzeugkauf}
+Auch wenn beim Kauf eines Neu- und Gebrauchtwagens Informationen zur Funktionsweise von ADAS durch Händler*innen weitergegeben werden könnten, sind auch hier deutliche Defizite zu erkennen \cite{manger2024explanation}. Eine Online-Befragung von 105 Teilnehmer*innen ergab, dass nur 27 \% der Befragten, die in den letzten vier Jahren ein Auto gekauft hatten, angaben, dass ADAS beim Kauf angesprochen wurden \cite{manger2024explanation}. Automatisiertes Fahren wurde bei 89 \% der Befragten nicht thematisiert \cite{manger2024explanation}. Des Weiteren würden sich viele Fahrer*innen nicht aktiv informieren, sondern durch Ausprobieren im Fahrzeug, teilweise auch während der Fahrt, dazulernen \cite{manger2024explanation}. Zuletzt befragten die Forscher*innen die Teilnehmer*innen, auf welchem Weg sie gerne Informationen zu den Assistenzsystemen eines Fahrzeuges erhalten würden \cite{manger2024explanation}. Am besten wurden dabei eine persönliche Beratung im Autohaus, bzw. Informationen in der Fahrschule bewertet. In-Car-Tutorials oder Trainingsvideos schnitten hingegen schlechter ab \cite{manger2024explanation}.
+
+Ein weiteres Problem ergebe sich laut Mason et al. \cite{mason2024developing} durch die Heterogenität zwischen Käufer*innen eines Neu- und Gebrauchtwagens. Käufer*innen eines Neuwagens erhielten eher Händler- oder Übergabeinformationen als Käufer*innen eines Gebrauchtwagens \cite{mason2024developing}. Außerdem gebe es Alters- und Geschlechtsspezifische Unterschiede hinsichtlich der Präferenz der Informationskanäle, so die Forscher*innen \cite{mason2024developing}. 
+
+Auch wenn es in der Befragung von Manger et al. \cite{manger2024explanation} eine klare Präferenz für persönliche Beratungsgespräche gab, muss kritsich eingewandt werden, dass dies vor dem Hintergrund der Erkenntnisse von Mason et al. \cite{mason2024developing} keine allgemeingültige Lösung sein kann. Es stellt sich zudem die Frage, ob ein persönliches Beratungsgespräch bei Online-Käufen, sofern es sich um Privatverkäufe handelt, überhaupt noch stattfindet. Eine Information über die Fahrschulen kann durchaus eine Verbesserung für Fahranfänger*innen zur Folge haben, ignoriert aber andere Altersgruppen, für die ebenfalls ein Informationsdefizit besteht. Vor diesem Hintergrund ergibt sich weiterhin die Notwendigkeit für ein Onboarding. Die von den Befragten \cite{manger2024explanation} geäußerte Absicht, Assistenzsysteme erst während der Fahrt ohne zusätzliche Unterstützung zu erlernen, ist aus Sicht der Fahrsicherheit als kritisch zu betrachten.
+
+\subsubsection{Fahrausbildung}
+\label{subsubsec:fahrausbildung}
+Rodak \& Pelka \cite{rodak2023driver} konstatieren, dass es schon in der Fahrausbildung in der Fahrschule Defizite bei der Informationsvermittlung zu ADAS und automatisiertem Fahren gebe. Innerhalb von Europa könne nicht davon gesprochen werden, dass es einheitliche Regeln dazu gebe, wie ADAS in der Fahrausbildung und Führerscheinprüfung behalndelt werde \cite{rodak2023driver}. Die existierenden EU-weiten Mindestanforderungen würden modernen Assistenz und Automationsfunktionen nur unzureichend gerecht \cite{rodak2023driver}. Gleichzeitig steige durch EU-Verordnungen die Anzahl an neuen Assistenz und Automationsfunktionen stetig an, was die Problematik vergrößere, so die Forscher*innen \cite{rodak2023driver}. 
 
 \subsection{Kommunikation von Systemfähigkeiten und Systemgrenzen}
 \label{subsec:kommunikation_systemgrenzen}
-abc
+Bisher wurden die Ursachen für das Nicht-Erkennen von Systemgrenzen der Assistenzsysteme primär auf Seiten der Fahrer*innen verortet. Dixon \cite{dixon2020autonowashing} weißt allerdings darauf hin, dass auch die Hersteller*innen der Fahrzeuge dafür verantwortlich seien. Der Forscher spricht in diesem Zusammenhang von 'Autonowashing', als eine Form von übertriebener oder irreführender Darstellung von Fahrzeugautomation, durch die Systeme autonomer erscheinen, als sie tatsächlich sind \cite{dixon2020autonowashing}. Insgesamt könne man fünf verschiedene Formen von Autonowashing unterscheiden, so Dixon \cite{dixon2020autonowashing}: Erstens sei eine Verwendung von unscharfen oder standardwidrigen Begriffen zu erkennen \cite{dixon2020autonowashing}. Zweitens gebe es unbelegte oder falsche Fähigkeitsaussagen \cite{dixon2020autonowashing}. Drittens würden Autoritätspersonen eine falsche Nutzung demeonstrieren \cite{dixon2020autonowashing}. Viertens würden idealisierte Medienbilder und Videos zur Bewerbung verwendet \cite{dixon2020autonowashing}. Zuletzt würden Vorteile oft überbetont, während eine Überwachungspflicht verschwiegen würde \cite{dixon2020autonowashing}. Als Lösungsmaßnahmen schlägt der Forscher neben regulatorischer Kontrolle auch die Verwendung einer standardisierten Terminologie, einer bessere Ausbildung der Fahrer*innen und die Überwachung der fahrzeugführenden Person hinsichtlich Aufmerksamkeit und Eingriffsbereitschaft vor \cite{dixon2020autonowashing}.
+
+Von den vorgeschlagenen Lösungsansätzen, ist im Kontext dieser Forschungsarbeit die Verwendung einer standardisierten Technologie der wichtigste Aspekt. Ein Onboarding sollte klar trennen zwischen Assistenz, Teilautomation und autonomen Systemen und auf die Verwendung von Marketingbegriffen verzichten.
 
 
 \section{Training und Onboarding für Fahrassistenzsysteme}
