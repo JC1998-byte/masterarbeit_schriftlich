@@ -6,12 +6,12 @@ Diese Forschungsarbeit verfolgt einen gestaltungsorientierten Ansatz im Sinne vo
 
 \subsection{DSR-Framework}
 
-Die folgende Abbildung zeigt das DSR-Framework nach Hevner et al. \cite{hevner2004design}:
+Abbildung \ref{fig:Hevner} zeigt das DSR-Framework nach Hevner et al. \cite{hevner2004design}:
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{images/method/Framework_DSR.png}
-    \caption{DSR-Framework/Cycles nach Hevner}
+    \caption{DSR-Framework/Cycles nach Hevner et al.}
     \label{fig:Hevner}
     \medskip
     {\footnotesize Quelle: Entnommen aus \cite[S.~6]{dogangun2025dsr}.}
@@ -35,6 +35,67 @@ die Untersuchung bestehender Probleme und der Bedarfe potenzieller
 Nutzer*innen und später durch die Evaluation der entwickelten Lösung in einem
 kontrollierten, fahrnahen Anwendungskontext.
 
-Im Zentrum des Frameworks steht der Design-Zyklus, der die Entwicklung und Evaluation eines Artefakts miteinander verknüpft. In der vorliegenden Arbeit umfasst dieser die Ableitung von Gestaltungsanforderungen, die partizipative Entwicklung eines In-Car-Onboarding-Konzepts, dessen prototypische Umsetzung sowie die anschließende Evaluation im Fahrsimulator. Aufgrund des zeitlichen und inhaltlichen Umfangs der Masterarbeit wird dabei kein mehrfacher vollständiger Entwicklungs- und Evaluationszyklus durchlaufen. Die Fahrsimulatorstudie bildet vielmehr die abschließende Evaluation des entwickelten Prototyps und stellt somit einen in der Sache begründeten Unterschied zu einer puristischen Anwendung des Frameworks dar.
+Im Zentrum des Frameworks steht der Design-Zyklus, der die Entwicklung und Evaluation eines Artefakts miteinander verknüpft. In der vorliegenden Arbeit umfasst dieser die Ableitung von Gestaltungsanforderungen, die partizipative Entwicklung eines In-Car-Onboarding-Konzepts, dessen prototypische Umsetzung sowie die anschließende Evaluation im Fahrsimulator. Aufgrund des zeitlichen und inhaltlichen Umfangs der Masterarbeit wird dabei kein mehrfacher vollständiger Entwicklungs- und Evaluationszyklus durchlaufen. Die aus der Evaluation resultierenden Erkenntnisse dienen daher nicht einer weiteren Überarbeitung und erneuten Evaluation innerhalb dieser Arbeit, sondern werden als Ausgangspunkt für mögliche zukünftige Iterationen diskutiert.
 
-Das DSR-Framework von Hevner et al. \cite{hevner2004design} ermöglicht eine übergeordnete Einordnung der Forschungsarbeit in Anwendungskontext und empirische Wissensbasis, strukturiert die einzelnen Forschungsaktivitäten jedoch nicht wie ein Prozessmodell. Aus diesem Grund soll im folgenden Abschnitt das DSR-Prozessmodell nach Peffers \cite{peffers2007design} zur Beantwortung dieser noch offenen Fragestellung verwendet werden.
+Das DSR-Framework von Hevner et al. \cite{hevner2004design} ermöglicht eine übergeordnete Einordnung der Forschungsarbeit in Anwendungskontext und wissenschaftliche Wissensbasis, strukturiert die einzelnen Forschungsaktivitäten jedoch nicht wie ein Prozessmodell. Aus diesem Grund soll im folgenden Abschnitt das DSR-Prozessmodell nach Peffers \cite{peffers2007design} zur Beantwortung dieser noch offenen Fragestellung verwendet werden.
+
+\subsection{DSR-Prozessmodell}
+
+Abbildung \ref{fig:Peffers} zeigt das DSR-Prozessmodell nach Peffers et al. \cite{peffers2007design}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{images/method/Modell_DSR.png}
+    \caption{Zyklischer DSR-Prozess nach Peffers et al.}
+    \label{fig:Peffers}
+    \medskip
+    {\footnotesize Quelle: Entnommen aus \cite[S.~53]{dogangun2025dsr}.}
+\end{figure}
+
+Das Modell konkretisiert DSR in sechs aufeinander bezogenen Aktivitäten, wobei der Ablauf nicht als strikt linear zu verstehen ist. Für die vorliegende Forschungsarbeit werden diese sechs generischen
+DSR-Aktivitäten in vier Untersuchungsphasen gebündelt. Die Bündelung dient
+dazu, das konkrete Vorgehen der Arbeit übersichtlich abzubilden, ohne die
+grundlegende Prozesslogik nach Peffers et al. zu verändern.
+
+Die erste Phase umfasst die Problemidentifikation und Motivation. Hierzu
+werden der bestehende Forschungsstand und die Erfahrungen, Erwartungen und
+Informationsbedarfe potenzieller Nutzer*innen untersucht. Die zweite Phase greift insbesondere die Aktivität der Zielsetzung der Lösung auf. Die Erkenntnisse aus Literatur und Nutzer*inneninterviews werden systematisch zusammengeführt und in konkrete Gestaltungsanforderungen für das In-Car-Onboarding überführt. Die dritte Phase entspricht der Aktivität Design und Entwicklung. Auf Basis der zuvor abgeleiteten Anforderungen wird partizipativ ein In-Car-Onboarding-Konzept entwickelt und prototypisch umgesetzt. Die vierte Phase bündelt Demonstration und Evaluation. Der entwickelte Prototyp wird in einem Fahrsimulator in definierten Fahrsituationen eingesetzt und anschließend hinsichtlich der zuvor festgelegten Zielsetzungen bewertet. Die Aktivität Kommunikation wird nicht als eigenständige Untersuchungsphase behandelt, sondern erfolgt phasenübergreifend durch die Dokumentation, Darstellung und Diskussion des Forschungsvorgehens und der Ergebnisse im Rahmen dieser Masterarbeit. Tabelle \ref{tab:dsr_phasen} zeigt die Zuordnung der Phasen der Masterarbeit zu den DSR-Aktivitäten aus dem Prozessmodell. 
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{p{0.27\textwidth} p{0.43\textwidth} p{0.22\textwidth}}
+\hline
+\textbf{DSR-Aktivität} & \textbf{Umsetzung in dieser Forschungsarbeit} &
+\textbf{Phase} \\
+\hline
+Problemidentifikation und Motivation &
+Analyse des Forschungsstands und qualitative Nutzer*inneninterviews &
+Phase 1 \\
+
+Zielsetzung der Lösung &
+Synthese der Erkenntnisse und Ableitung von Gestaltungsanforderungen &
+Phase 2 \\
+
+Design und Entwicklung &
+Partizipative Konzeptentwicklung und prototypische Umsetzung &
+Phase 3 \\
+
+Demonstration &
+Einsatz des Prototyps im Fahrsimulator &
+Phase 4 \\
+
+Evaluation &
+Bewertung des Prototyps anhand der definierten Zielsetzungen &
+Phase 4 \\
+
+Kommunikation &
+Dokumentation und Diskussion innerhalb der Masterarbeit &
+phasenübergreifend \\
+\hline
+\end{tabular}
+
+\caption{Zuordnung der DSR-Aktivitäten nach Peffers et al. zu den Untersuchungsphasen dieser Arbeit}
+\label{tab:dsr_phasen}
+\end{table}
+
+Die nachfolgenden Abschnitte beschreiben die methodische Ausgestaltung dieser vier Untersuchungsphasen im Detail.
