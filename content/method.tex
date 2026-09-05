@@ -265,20 +265,65 @@ Die Zielgruppe der Interviews bildeten Personen mit einer innerhalb der Europäi
 
 Die Datenerhebung erfolgte mithilfe eines halbstrukturierten Interviewleitfadens. Diese Interviewform wurde gewählt, um einerseits vergleichbare Themenbereiche bei allen Teilnehmenden abzudecken und andererseits ausreichend Offenheit für individuelle Erfahrungen, Erläuterungen und Nachfragen zu gewährleisten.
 
-Der Leitfaden umfasste zunächst Fragen zur bisherigen Erfahrung mit Fahrassistenzsystemen und zum jeweiligen Nutzungskontext. Anschließend wurden die erste Nutzung entsprechender Systeme, bisherige Formen der Informationsvermittlung und die persönliche Aneignung der Funktionsweise
-thematisiert. Weitere Fragen bezogen sich auf das Verständnis der Systemfunktion und -grenzen sowie auf Erwartungen und Präferenzen hinsichtlich eines möglichen In-Car-Onboardings.
+Der Leitfaden umfasste zunächst Fragen zur bisherigen Erfahrung mit Fahrassistenzsystemen und zum jeweiligen Nutzungskontext. Anschließend wurden die erste Nutzung entsprechender Systeme, bisherige Formen der Informationsvermittlung und die persönliche Aneignung der Funktionsweise thematisiert. Weitere Fragen bezogen sich auf das Verständnis der Systemfunktion und -grenzen sowie auf Erwartungen und Präferenzen hinsichtlich eines möglichen In-Car-Onboardings.
 
 Die Reihenfolge der Fragen diente dabei als Orientierung und konnte abhängig vom Gesprächsverlauf angepasst werden. Vertiefende Nachfragen wurden eingesetzt, um relevante Aussagen näher zu konkretisieren. Der vollständige Interviewleitfaden ist in Anhang \ref{sec:interviewleitfaden} dokumentiert.
 
 \subsubsection{Durchführung}
 
 Die Interviews wurden im Zeitraum vom 07.08. bis zum 14.08.2026 durchgeführt und dauerten jeweils ungefähr 30 Minuten. Die Gespräche fanden sowohl in Präsenz als auch Online statt. Vor Beginn des Interviews wurden die Teilnehmenden über Ziel und Ablauf der Untersuchung sowie den Umgang mit den erhobenen Daten informiert.
-Die Interviews wurden mit Einverständnis der Teilnehmenden aufgezeichnet und anschließend für die qualitative Auswertung transkribiert. Personenbezogene Angaben wurden im Rahmen der Aufbereitung anonymisiert. 
+Alle Interviews wurden mit Einverständnis der Teilnehmenden aufgezeichnet und anschließend für die qualitative Auswertung mithilfe von Whisper \cite{radford2022whisper} transkribiert. Personenbezogene Angaben wurden im Rahmen der Aufbereitung anonymisiert und alle Texte noch einmal manuell überarbeitet. 
 
-\subsubsection{Qualitative Inhaltsanalyse}
+\subsubsection{Kodierung und Auswertung}
 
+Im Rahmen der Kodierung und Auswertung wurde eine qualitative Inhaltsanalyse nach Kuckartz \cite{kuckartz2014mixed} praktiziert. Die Arbeiten wurden mithilfe der der webbasierten QDA-Software 'OpenQDA' \cite{kuester2026openqda} durchgeführt, welche neben der Möglichkeit zur Kodierung von Dokumenten auch umfangreiche Textbearbeitungswerkzeuge zur Verfügung stellt.
+
+Zunächst wurden initieerende Textarbeiten, bspw. das Markieren wichtiger Textstellen, durchgeführt. Im Anschluss wurden ausgehend von der Forschungsfrage, dem Interviewleitfaden und den Erkenntnissen aus der Literatur übergeordnete thematische Hauptkategorien gebildet und das Material mit diesen kodiert. Anschließend wurden alle Textstellen zusammengestellt, welche mit den gleichen Hauptkategorien kodiert wurden und die Subkategorien induktiv am Material bestimmt. Daran anknüpfend wurde das gesamte Material mit dem ausdifferenzierten Kategoriensystem noch einmal kodiert. Das vollständige Codebook mit den verwendeten Haupt- und Unterkategorien sowie deren Definitionen ist in Anhang \ref{sec:codebook} dokumentiert. Im abschließenden Analyseschritt wurden die kodierten Textstellen kategorienbasiert ausgewertet. Hierzu wurden die Aussagen innerhalb der Haupt- und Subkategorien fallübergreifend verglichen und zu zentralen inhaltlichen Befunden verdichtet. Die kategorienbasierte Ergebnisdarstellung erfolgt in Kapitel \ref{chapter:results}. 
+
+Abbildung \ref{fig:OpenQDA} zeigt einen Ausschnitt aus der Software Open-QDA.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/method/OpenQDA_Ausschnitt.png}
+    \caption{Ausschnitt aus der Software OpenQDA}
+    \label{fig:OpenQDA}
+    \medskip
+    {\footnotesize Quelle: Eigene Darstellung.}
+\end{figure}
+
+Abbildung \ref{fig:Kuckartz} zeigt das Vorgehensmodell der Qualitativen Inhaltsanalyse nach Kuckartz.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/method/Modell_QI.png}
+    \caption{Vorgehensmodell der Qualitativen Inhaltsanalyse nach Kuckartz}
+    \label{fig:Kuckartz}
+    \medskip
+    {\footnotesize Quelle: Entnommen aus \cite[S.~111]{kuckartz2014mixed}.}
+\end{figure}
 
 \section{Zielsetzung der Lösung}
+
+ In dieser DSR-Aktivität wurden die verdichteten Befunde aus dem letzten Schritt der qualitativen Inhaltsanalyse den in Kapitel \ref{chapter:theory} herausgearbeiteten Erkenntnissen aus dem Forschungsstand gegenübergestellt. Die Synthese erfolgte entlang gemeinsamer Themenbereiche, beispielsweise Systemverständnis, Systemgrenzen, Fahrer*innenrolle, Informationszeitpunkt und Darstellungsform. Für jedes Synthesethema wurde geprüft, inwieweit Literatur- und Interviewbefunde übereinstimmten, sich ergänzten oder unterschiedliche bzw. widersprüchliche Gestaltungsbedarfe erkennen ließen.
+
+Auf Grundlage dieser Synthese wurden zunächst übergeordnete Designprinzipien in Anlehnung an Gregor et al. \cite{gregor2020anatomy} und Maedche \cite{maedche2019structuring} formuliert. Diese beschreiben in präskriptiver Form, welche grundlegenden Gestaltungsziele das In-Car-Onboarding erfüllen sollte, ohne bereits eine konkrete technische oder gestalterische Umsetzung festzulegen. 
+
+Aus den Designprinzipien wurden in Anlehnung an Maedche \cite{maedche2019structuring} anschließend konkrete Design Requirements
+abgeleitet. Diese spezifizieren, welche Eigenschaften und Funktionen das
+In-Car-Onboarding aufweisen muss, damit die zuvor formulierten
+Designprinzipien umgesetzt werden können. Anforderungen, die sich aufgrund
+einer deutlichen Übereinstimmung von Literatur- und Interviewbefunden
+eindeutig ableiten ließen, wurden bereits an dieser Stelle festgelegt.
+
+Bei Themen, für die zwar ein grundlegendes Gestaltungsziel erkennbar war, die
+konkrete Ausprägung jedoch offen blieb, wurden zusätzlich Spannungsfelder
+formuliert. Diese betrafen insbesondere unterschiedliche Präferenzen oder
+konkurrierende Gestaltungsziele, beispielsweise den Grad der Führung, den
+Umfang der Personalisierung, die Verteilung von Informationen vor und während
+der Fahrt sowie die Wahl geeigneter Darstellungsmodalitäten. Solche
+Spannungsfelder wurden bewusst nicht durch eine vorab festgelegte
+Gestaltungslösung aufgelöst, sondern als offene Gestaltungsfragen in die
+nachfolgende partizipative Konzeptentwicklung überführt.
 
 \section{Design und Entwicklung}
 
