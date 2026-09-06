@@ -7798,3 +7798,648 @@ K-913 & Proband*in 10 & \textit{„klickst auf „Bestätigen““} \\
 \hline
 \caption{Kodierungen zum Code „Bedienmodalität / Haptik“}\label{tab:kodiernachweis-bedienmodalitaet-haptik}\\
 \end{longtable}
+
+
+\clearpage
+% ============================================================
+% Leitfaden für den partizipativen Workshop
+% ============================================================
+
+\section{Leitfaden für den partizipativen Workshop}
+\label{sec:workshopleitfaden}
+
+\subsection{Ziel des Workshops}
+\label{subsec:workshop-ziel}
+
+Ziel des Workshops ist es, gemeinsam mit potenziellen Nutzer*innen
+konkrete Gestaltungsideen für ein In-Car-Onboarding eines
+Spurhalteassistenten zu entwickeln.
+
+Die zuvor abgeleiteten Design Requirements bilden den wissenschaftlich
+begründeten Gestaltungsrahmen. Offene Spannungsfelder werden gezielt
+partizipativ bearbeitet. Als Ergebnis sollen priorisierte
+Gestaltungsideen beziehungsweise Design Features entstehen, die
+anschließend zu einem Onboarding-Konzept weiterentwickelt werden.
+
+
+% ============================================================
+% Rahmenbedingungen
+% ============================================================
+
+\subsection{Rahmenbedingungen}
+\label{subsec:workshop-rahmenbedingungen}
+
+\begin{itemize}
+    \item \textbf{Dauer:} ca. 105 Minuten
+    \item \textbf{Format:} Präsenzworkshop
+    \item \textbf{Moderation:} durch den Verfasser der Masterarbeit
+    \item \textbf{Dokumentation:} Audioaufnahme, Fotos der
+    Arbeitsmaterialien, Paper Prototypes, Voting-Ergebnisse und
+    Moderationsnotizen
+\end{itemize}
+
+
+% ============================================================
+% Ablaufübersicht
+% ============================================================
+
+\subsection{Ablaufübersicht}
+\label{subsec:workshop-ablauf}
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{
+        |p{0.13\textwidth}
+        |p{0.57\textwidth}
+        |p{0.15\textwidth}|
+    }
+        \hline
+        \textbf{4C-Schritt} &
+        \textbf{Workshopteil} &
+        \textbf{Zeit} \\
+        \hline
+
+        - &
+        Begrüßung und Einführung &
+        5 Min. \\
+        \hline
+
+        Collect &
+        Problemverständnis: individuelle Sammlung und Clustering &
+        12 Min. \\
+        \hline
+
+        Choose &
+        Inhalte priorisieren &
+        12 Min. \\
+        \hline
+
+        Choose &
+        Informationszeitpunkte bestimmen &
+        10 Min. \\
+        \hline
+
+        Choose/Create &
+        Design Requirements und Spannungsfelder als Gestaltungsrahmen &
+        10 Min. \\
+        \hline
+
+        Create &
+        Gestaltungsideen / Paper Prototyping &
+        35 Min. \\
+        \hline
+
+        Commit &
+        Bewertung, Verdichtung und Abschluss &
+        16 Min. \\
+        \hline
+
+        - &
+        Puffer &
+        5 Min. \\
+        \hline
+    \end{tabular}
+
+    \caption{Ablauf des partizipativen Workshops}
+    \label{tab:workshop-ablauf}
+\end{table}
+
+
+\clearpage
+% ============================================================
+% 1. Begrüßung und Einführung
+% ============================================================
+
+\subsection{Begrüßung und Einführung}
+\label{subsec:workshop-begruessung}
+
+\noindent
+\textbf{Dauer:} ca. 5 Minuten
+
+\subsubsection*{Ziele}
+
+\begin{itemize}
+    \item Ziel und Ablauf des Workshops erläutern
+    \item Rolle der Teilnehmenden als Nutzer*innenperspektive
+    verdeutlichen
+    \item Vermitteln, dass kein technisches Fachwissen oder
+    gestalterisches Können vorausgesetzt wird
+    \item Unterschiedliche Meinungen und unkonventionelle Vorschläge
+    ausdrücklich zulassen
+    \item Einverständnis zur Aufzeichnung und anonymisierten Auswertung
+    einholen
+\end{itemize}
+
+\subsubsection*{Einleitung durch den Moderator}
+
+\begin{quote}
+Vielen Dank, dass ihr euch Zeit für den Workshop nehmt. Wir wollen heute
+gemeinsam Ideen dafür entwickeln, wie ein Spurhalteassistent im Fahrzeug
+so erklärt und begleitet werden könnte, dass Fahrer*innen ihn sicher und
+korrekt nutzen können.
+
+Dabei interessiert mich nicht, ob ihr euch technisch besonders gut mit
+Fahrassistenzsystemen auskennt. Entscheidend sind eure Erwartungen,
+Erfahrungen und Vorstellungen als Nutzer*innen.
+
+Es gibt keine richtigen oder falschen Antworten. Unterschiedliche
+Meinungen sind ausdrücklich erwünscht. Auch beim späteren Gestalten geht
+es nicht darum, besonders gut zeichnen zu können. Einfache Skizzen,
+Stichworte und Ideen reichen vollkommen aus.
+\end{quote}
+
+\subsubsection*{Material}
+
+\begin{itemize}
+    \item Begrüßungsfolie
+    \item Ablaufübersicht
+    \item Timer
+    \item Aufnahmegerät
+\end{itemize}
+
+\subsubsection*{Erwartetes Ergebnis}
+
+Alle Teilnehmenden verfügen über ein gemeinsames Verständnis der Aufgabe
+und ihrer Rolle im Workshop.
+
+
+\clearpage
+% ============================================================
+% 2. Collect
+% ============================================================
+
+\subsection{Collect - Problemverständnis}
+\label{subsec:workshop-collect}
+
+\noindent
+\textbf{Dauer:} ca. 12 Minuten
+
+\subsubsection*{Ziel}
+
+Informationsbedarfe, Unsicherheiten und Erwartungen zunächst möglichst
+unbeeinflusst von den zuvor abgeleiteten Design Requirements erfassen.
+
+\subsubsection*{Ausgangsszenario}
+
+\begin{quote}
+Stellt euch vor, ihr steigt zum ersten Mal in ein neues Fahrzeug.
+Das Fahrzeug verfügt über einen Spurhalteassistenten, den ihr bisher
+noch nicht benutzt habt. Ihr wisst grundsätzlich, dass das System etwas
+mit dem Halten der Fahrspur zu tun hat, kennt aber weder die genaue
+Funktionsweise noch das Verhalten dieses konkreten Systems.
+\end{quote}
+
+\subsubsection*{Schritt 1 - Individuelle Sammlung}
+
+\noindent
+\textbf{Dauer:} ca. 4 Minuten
+
+Jede Person erhält Post-its. Pro Post-it wird eine Idee notiert.
+
+\begin{quote}
+Was müsstet ihr über diesen Spurhalteassistenten wissen oder verstehen,
+damit ihr euch bei der ersten Nutzung sicher fühlt und ihn korrekt
+verwenden könnt?
+\end{quote}
+
+\subsubsection*{Schritt 2 - Gemeinsames Clustering}
+
+\noindent
+\textbf{Dauer:} ca. 5 Minuten
+
+\begin{itemize}
+    \item Alle Post-its werden sichtbar angebracht.
+    \item Ähnliche Aussagen werden gemeinsam gruppiert.
+    \item Die Moderation nimmt keine inhaltliche Bewertung vor.
+\end{itemize}
+
+\subsubsection*{Schritt 3 - Kurze Reflexion}
+
+\noindent
+\textbf{Dauer:} ca. 3 Minuten
+
+\begin{itemize}
+    \item Welcher Punkt wäre für euch vor der ersten Nutzung besonders
+    wichtig?
+    \item Wo könnte ein Missverständnis besonders problematisch werden?
+\end{itemize}
+
+\subsubsection*{Material}
+
+\begin{itemize}
+    \item Post-its
+    \item Stifte
+    \item Flipchart/Pinnwand oder großes Papier
+\end{itemize}
+
+\subsubsection*{Erwartetes Ergebnis}
+
+Eine möglichst unbeeinflusste Sammlung von Informationsbedarfen,
+Unsicherheiten und Erwartungen.
+
+
+\clearpage
+% ============================================================
+% 3. Choose – Inhalte priorisieren
+% ============================================================
+
+\subsection{Choose - Inhalte priorisieren}
+\label{subsec:workshop-choose-inhalte}
+
+\noindent
+\textbf{Dauer:} ca. 12 Minuten
+
+\subsubsection*{Ziel}
+
+Relevante Inhalte für den Einstieg fokussieren und gleichzeitig sichtbar
+machen, welche Inhalte erst später oder optional vertieft werden können.
+
+\subsubsection*{Inhaltskarten}
+
+\begin{enumerate}
+    \item \textbf{Zweck:}
+    Wozu dient der Spurhalteassistent?
+
+    \item \textbf{Bedienung:}
+    Wie wird der Spurhalteassistent aktiviert und deaktiviert?
+
+    \item \textbf{Systemstatus:}
+    Woran erkenne ich, ob der Spurhalteassistent aktiv, inaktiv oder
+    nicht verfügbar ist?
+
+    \item \textbf{Funktionsweise und Eingriff:}
+    Was macht der Spurhalteassistent und wie greift er in die
+    Fahrzeugführung ein?
+
+    \item \textbf{Einsatzbedingungen:}
+    Wann reagiert der Spurhalteassistent und unter welchen Bedingungen
+    greift er ein?
+
+    \item \textbf{Systemgrenzen:}
+    Unter welchen Bedingungen kann der Spurhalteassistent nicht
+    zuverlässig funktionieren?
+
+    \item \textbf{Fahrer*innenrolle:}
+    Welche Aufgaben und welche Verantwortung bleiben bei der fahrenden
+    Person?
+
+    \item \textbf{Anzeigen und Warnungen:}
+    Was bedeuten Symbole, Farben, Töne und Meldungen des
+    Spurhalteassistenten?
+
+    \item \textbf{Verhalten bei Systemgrenzen:}
+    Was soll die fahrende Person tun, wenn der Spurhalteassistent nicht
+    mehr zuverlässig arbeiten kann?
+\end{enumerate}
+
+\subsubsection*{Schritt 1 - Ergänzen und Zuordnen}
+
+\noindent
+\textbf{Dauer:} ca. 4 Minuten
+
+\begin{itemize}
+    \item Die Ergebnisse aus Collect werden den Inhaltskarten zugeordnet.
+    \item Passt ein Punkt auf keine vorhandene Karte, wird eine neue
+    Inhaltskarte ergänzt.
+\end{itemize}
+
+\subsubsection*{Schritt 2 - Individuelle Priorisierung}
+
+\noindent
+\textbf{Dauer:} ca. 3 Minuten
+
+Jede Person erhält fünf Klebepunkte.
+
+\begin{quote}
+Welche Inhalte sind für ein sicheres erstes Verständnis besonders
+wichtig?
+\end{quote}
+
+\subsubsection*{Schritt 3 - Gemeinsame Einordnung}
+
+\noindent
+\textbf{Dauer:} ca. 5 Minuten
+
+\begin{itemize}
+    \item \textbf{A:} Muss beim Einstieg vermittelt werden
+    \item \textbf{B:} Ist hilfreich, aber nicht zwingend sofort
+    erforderlich
+    \item \textbf{C:} Kann später beziehungsweise bei Interesse vertieft
+    werden
+\end{itemize}
+
+\subsubsection*{Erwartetes Ergebnis}
+
+Eine Priorisierung der Onboarding-Inhalte und erste Hinweise zur
+Konkretisierung des Spannungsfelds Vollständigkeit versus Kürze.
+
+
+\clearpage
+% ============================================================
+% 4. Choose – Informationszeitpunkte
+% ============================================================
+
+\subsection{Choose - Informationszeitpunkte bestimmen}
+\label{subsec:workshop-choose-zeitpunkte}
+
+\noindent
+\textbf{Dauer:} ca. 10 Minuten
+
+\subsubsection*{Ziel}
+
+Bestimmen, zu welchem Zeitpunkt wichtige Informationen vermittelt werden
+sollten und ob sich die gewünschte Informationstiefe je nach Zeitpunkt
+unterscheidet.
+
+\subsubsection*{Zuordnung}
+
+\begin{itemize}
+    \item Vor der ersten Nutzung
+    \item In einer konkreten Fahrsituation
+    \item Später / bei Bedarf
+\end{itemize}
+
+Mehrfachzuordnungen sind ausdrücklich möglich.
+
+\subsubsection*{Arbeitsauftrag}
+
+\begin{quote}
+Ordnet die wichtigsten Informationskarten einem oder mehreren
+Zeitpunkten zu. Wenn eine Information mehrfach vorkommen soll, überlegt
+zusätzlich, ob sie jedes Mal gleich ausführlich vermittelt werden muss.
+\end{quote}
+
+\subsubsection*{Vertiefungsfrage}
+
+\begin{quote}
+Muss beispielsweise eine Systemgrenze vor Fahrtbeginn vollständig
+erklärt werden oder reicht dort eine Grundinformation und später ein
+konkreter situationsbezogener Hinweis?
+\end{quote}
+
+\subsubsection*{Erwartetes Ergebnis}
+
+Eine Matrix aus Inhalt, Informationszeitpunkt und gewünschter
+Informationstiefe.
+
+
+\clearpage
+% ============================================================
+% 5. Choose zu Create
+% ============================================================
+
+\subsection{Von Choose zu Create - Gestaltungsrahmen}
+\label{subsec:workshop-gestaltungsrahmen}
+
+\noindent
+\textbf{Dauer:} ca. 10 Minuten
+
+\subsubsection*{Ziel}
+
+Die Design Requirements werden in sechs thematische Karten für den
+Gestaltungsrahmen gebündelt.
+
+Die Teilnehmenden sollen die Design Requirements nicht grundsätzlich neu
+bewerten. Die Karten dienen als Gestaltungsrahmen für die nachfolgende
+Ideengenerierung. Gleichzeitig bleiben die aus der Synthese abgeleiteten
+Spannungsfelder als offene Gestaltungsfragen bewusst bestehen.
+
+\subsubsection*{Karte 1 - System verstehen}
+
+\noindent
+\textbf{Design Requirements:} DR-01, DR-02
+
+\begin{itemize}
+    \item \textbf{Leitgedanke:}
+    Das Onboarding soll verständlich machen, wozu der
+    Spurhalteassistent dient, wie er funktioniert und was er gerade tut.
+
+    \item \textbf{Offene Gestaltungsfrage:}
+    Wie kann man Funktion und Systemstatus schnell und verständlich
+    vermitteln?
+\end{itemize}
+
+\subsubsection*{Karte 2 - Grenzen verstehen}
+
+\noindent
+\textbf{Design Requirements:} DR-03, DR-04
+
+\begin{itemize}
+    \item \textbf{Leitgedanke:}
+    Das Onboarding soll verständlich machen, was das System kann und
+    unter welchen Bedingungen es an seine Grenzen kommt.
+
+    \item \textbf{Offene Gestaltungsfrage:}
+    Wie können Systemgrenzen so vermittelt werden, dass sie verständlich
+    und erinnerbar sind?
+\end{itemize}
+
+\subsubsection*{Karte 3 - Verantwortung und Vertrauen}
+
+\noindent
+\textbf{Design Requirements:} DR-05, DR-06
+
+\begin{itemize}
+    \item \textbf{Leitgedanke:}
+    Das Onboarding soll deutlich machen, was das System übernimmt und
+    wofür die fahrende Person weiterhin verantwortlich bleibt.
+
+    \item \textbf{Offene Gestaltungsfrage:}
+    Wie lässt sich Verantwortung vermitteln, ohne das System unnötig
+    schlecht oder zu leistungsfähig erscheinen zu lassen?
+\end{itemize}
+
+\subsubsection*{Karte 4 - Richtiger Zeitpunkt}
+
+\noindent
+\textbf{Design Requirements:} DR-07, DR-08, DR-11
+
+\begin{itemize}
+    \item \textbf{Leitgedanke:}
+    Nicht jede Information muss zum gleichen Zeitpunkt oder gleich
+    ausführlich vermittelt werden.
+
+    \item \textbf{Offene Gestaltungsfrage:}
+    Was muss vorher gelernt werden, was sollte situationsbezogen
+    erscheinen und was reicht bei Bedarf?
+\end{itemize}
+
+\subsubsection*{Karte 5 - Darstellung und Warnung}
+
+\noindent
+\textbf{Design Requirements:} DR-09, DR-10
+
+\begin{itemize}
+    \item \textbf{Leitgedanke:}
+    Informationen sollen zuverlässig wahrnehmbar sein, ohne während der
+    Fahrt unnötig abzulenken.
+
+    \item \textbf{Offene Gestaltungsfrage:}
+    Wann eignen sich Text, Symbol, Animation, Ton oder eine Kombination
+    daraus?
+\end{itemize}
+
+\subsubsection*{Karte 6 - Lernen und Individualisierung}
+
+\noindent
+\textbf{Design Requirements:} DR-12, DR-13, DR-14
+
+\begin{itemize}
+    \item \textbf{Leitgedanke:}
+    Das Onboarding soll sicherheitsrelevante Inhalte vermitteln und
+    zugleich unterschiedliche Vorkenntnisse und Lernpräferenzen
+    berücksichtigen.
+
+    \item \textbf{Offene Gestaltungsfragen:}
+    \begin{itemize}
+        \item Was muss verpflichtend sein?
+        \item Was darf optional vertieft werden?
+        \item Wie viel Führung ist hilfreich?
+        \item Wie könnte eigenes Ausprobieren sicher ermöglicht werden?
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{Erwartetes Ergebnis}
+
+Ein gemeinsames Verständnis des Gestaltungsrahmens bei weiterhin offenem
+Lösungsraum.
+
+
+\clearpage
+% ============================================================
+% 6. Create
+% ============================================================
+
+\subsection{Create - Design Features entwickeln}
+\label{subsec:workshop-create}
+
+\noindent
+\textbf{Dauer:} ca. 35 Minuten
+
+\subsubsection*{Ziel}
+
+Konkrete Gestaltungsideen entwickeln, mit denen die priorisierten
+Inhalte und Design Requirements in zwei relevanten Nutzungssituationen
+umgesetzt werden können.
+
+\subsubsection*{Arbeitsauftrag}
+
+\paragraph*{Szenario A - Vor der ersten Fahrt}
+
+Eine Person sitzt zum ersten Mal im Fahrzeug und soll den
+Spurhalteassistenten kennenlernen.
+
+\paragraph*{Szenario B - Systemgrenze während der Fahrt}
+
+Die Person fährt bereits mit dem Fahrzeug. Aufgrund einer schwierigen
+Situation, beispielsweise schlechter oder uneindeutiger
+Fahrbahnmarkierungen, kann der Spurhalteassistent nicht mehr zuverlässig
+unterstützen.
+
+Für beide Szenarien werden folgende Fragen bearbeitet:
+
+\begin{itemize}
+    \item Was muss vermittelt werden?
+    \item Wann erscheint die Information?
+    \item Wie wird sie dargestellt?
+    \item Was soll oder kann die fahrende Person dabei tun?
+\end{itemize}
+
+\subsubsection*{Vorgehen}
+
+\begin{itemize}
+    \item Die Teilnehmenden arbeiten in zwei kleinen Gruppen.
+
+    \item \textbf{Runde 1 (ca. 12 Minuten):}
+    Gruppe A bearbeitet Szenario A, Gruppe B Szenario B.
+
+    \item \textbf{Runde 2 (ca. 10 Minuten):}
+    Die Gruppen wechseln und entwickeln den vorhandenen Entwurf der
+    anderen Gruppe weiter.
+
+    \item \textbf{Kurzvorstellung (ca. 8 Minuten):}
+    Vorstellung der wichtigsten Elemente.
+
+    \item \textbf{Gemeinsame Ergänzung (ca. 5 Minuten):}
+    Weitere Ideen werden ergänzt, ohne eine abschließende Bewertung
+    vorzunehmen.
+\end{itemize}
+
+\subsubsection*{Material}
+
+\begin{itemize}
+    \item Cockpit-Vorlagen
+    \item Leere Screen-Vorlagen
+    \item Post-its
+    \item Stifte
+    \item Optional: Symbol- oder Pfeilkarten
+    \item Sechs Gestaltungsrahmen-Karten
+    \item Ergebnisse aus der Choose-Phase
+\end{itemize}
+
+\subsubsection*{Erwartetes Ergebnis}
+
+Paper Prototypes beziehungsweise Storyboards mit konkreten
+Gestaltungselementen, die als potenzielle Design Features für das spätere
+Onboarding-Konzept dienen.
+
+
+\clearpage
+% ============================================================
+% 7. Commit
+% ============================================================
+
+\subsection{Commit - Design Features bewerten und Abschluss}
+\label{subsec:workshop-commit}
+
+\noindent
+\textbf{Dauer:} ca. 16 Minuten
+
+\subsubsection*{Ziel}
+
+Geeignete Gestaltungselemente identifizieren, unterschiedliche
+Präferenzen sichtbar machen und eine Grundlage für die anschließende
+Konsolidierung zu einem Onboarding-Konzept schaffen.
+
+\subsubsection*{Schritt 1 - Individuelle Auswahl}
+
+\noindent
+\textbf{Dauer:} ca. 5 Minuten
+
+Jede Person erhält fünf Klebepunkte.
+
+\begin{quote}
+Markiert konkrete Gestaltungselemente, die aus eurer Sicht unbedingt in
+das spätere Onboarding einfließen sollten. Bewertet werden einzelne
+Features, nicht ein vollständiger Entwurf als Gewinner oder Verlierer.
+\end{quote}
+
+\subsubsection*{Schritt 2 - Gemeinsame Reflexion}
+
+\noindent
+\textbf{Dauer:} ca. 8 Minuten
+
+\begin{itemize}
+    \item Welche Elemente sollten unbedingt übernommen werden und warum?
+    \item Welche Elemente würdet ihr eher vermeiden oder anders
+    gestalten?
+    \item Wo bestehen weiterhin unterschiedliche Präferenzen?
+    \item Welche offenen Gestaltungsfragen konnten heute nicht eindeutig
+    gelöst werden?
+\end{itemize}
+
+\subsubsection*{Schritt 3 - Abschluss}
+
+\noindent
+\textbf{Dauer:} ca. 3 Minuten
+
+Die Moderation fasst die zentralen Ergebnisse zusammen und erläutert,
+dass die priorisierten Gestaltungselemente anschließend zu einem
+konsolidierten Konzept und einem Prototyp überführt werden.
+
+\subsubsection*{Erwartetes Ergebnis}
+
+Eine begründete Auswahl geeigneter Design Features sowie eine
+Dokumentation von abweichenden Positionen und weiterhin offenen
+Gestaltungsfragen.
