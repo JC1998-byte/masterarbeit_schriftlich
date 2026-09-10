@@ -281,14 +281,14 @@ Nutzer*inneninterviews}
 \hline
 \textbf{ID} &
 \textbf{Designprinzip} &
-\textbf{Grundlage aus der Synthese} \\
+\textbf{Zugrunde liegende Synthesethemen} \\
 \hline
 \endfirsthead
 
 \hline
 \textbf{ID} &
 \textbf{Designprinzip} &
-\textbf{Grundlage aus der Synthese} \\
+\textbf{Zugrunde liegende Synthesethemen} \\
 \hline
 \endhead
 
@@ -298,7 +298,7 @@ Funktionsweise und Systemzuständen zur Verfügung, damit Fahrer*innen die
 Assistenzfunktion und ihr aktuelles Verhalten nachvollziehen können, unter der
 Annahme, dass ein angemessenes Systemverständnis eine Voraussetzung für die
 sichere und korrekte Nutzung darstellt. &
-Systemverständnis, Aktivitätsstatus, Systemhandlung, Mode Awareness \\
+Grundlegendes Systemverständnis, Systemstatus und Mode Awareness \\
 \hline
 
 DP-02 &
@@ -308,7 +308,7 @@ und ungeeignete Einsatzsituationen erkennen und das Verhalten der
 Assistenzfunktion angemessen einschätzen können, unter der Annahme, dass
 Systemgrenzen kontextabhängig auftreten und Fehlvorstellungen zu Fehlgebrauch
 führen können. &
-Systemgrenzen, situative Grenzen, Fehlverhalten, konkrete Use Cases \\
+Systemgrenzen und Fehlverhalten \\
 \hline
 
 DP-03 &
@@ -317,8 +317,7 @@ Assistenzsystem und fahrzeugführender Person zur Verfügung, damit Fahrer*innen
 ihre verbleibende Verantwortung erkennen und sich in angemessenem Umfang auf
 das System verlassen können, unter der Annahme, dass sowohl Übervertrauen als
 auch unzureichendes Vertrauen eine sichere Nutzung beeinträchtigen können. &
-Fahrer*innenrolle, Verantwortung, Kontrolle, Übervertrauen,
-kalibrierte Reliance \\
+Fahrer*innenrolle und Verantwortung, Vertrauen und angemessene Reliance \\
 \hline
 
 DP-04 &
@@ -327,7 +326,7 @@ Informationsvermittlung zur Verfügung, damit Fahrer*innen relevante
 Informationen zu einem für Inhalt und Fahrsituation geeigneten Zeitpunkt
 aufnehmen können, unter der Annahme, dass Informationsverarbeitung während der
 Fahrt mit der primären Fahraufgabe konkurriert. &
-Vor der Fahrt, situationsbezogene Hinweise, Informationsmenge während der Fahrt \\
+Zeitpunkt der Informationsvermittlung, Informationsmenge während der Fahrt \\
 \hline
 
 DP-05 &
@@ -336,7 +335,7 @@ Informationsdarstellung zur Verfügung, damit Fahrer*innen relevante Hinweise
 zuverlässig und mit möglichst geringer zusätzlicher Beanspruchung wahrnehmen
 und interpretieren können, unter der Annahme, dass unterschiedliche
 Darstellungsmodalitäten verschiedene Stärken und Ablenkungspotenziale besitzen. &
-Visuell, akustisch, multimodal, Warnintensität, Ablenkung \\
+Darstellungsform und Multimodalität \\
 \hline
 
 DP-06 &
@@ -346,7 +345,7 @@ entsprechend ihrer Vorerfahrung und ihres aktuellen Informationsbedarfs
 schrittweise verstehen können, unter der Annahme, dass Wissen, Erfahrung und
 Informationsbedarf zwischen Nutzer*innen variieren und sich im Nutzungsverlauf
 verändern. &
-Personalisierung, Vorerfahrung, Wiederholbarkeit, schrittweise Vertiefung \\
+Wiederholung und Lernen im Nutzungsverlauf, Personalisierung und unterschiedliche Vorerfahrung \\
 \hline
 
 DP-07 &
@@ -356,8 +355,7 @@ Funktionsweise und Grenzen durch eigenes Handeln erfahren können, unter der
 Annahme, dass praktisches Lernen das Verständnis unterstützen kann, ein
 unkontrolliertes Versuch-und-Irrtum-Lernen bei sicherheitskritischen Funktionen
 jedoch vermieden werden sollte. &
-Learning by Doing, praktisches Training, geführt vs.\ selbst erkunden,
-sicheres Erproben \\
+Wiederholung und Lernen im Nutzungsverlauf \\
 \hline
 
 \caption{Aus der Synthese abgeleitete Designprinzipien für das In-Car-Onboarding}
@@ -391,7 +389,7 @@ sicheres Erproben \\
 Geführt $\leftrightarrow$ selbst erkunden &
 In den Interviews finden sich beide Präferenzen. Auch die Literatur zeigt,
 dass unterschiedliche Tutorial- und Navigationsformen funktionieren können,
-ohne dass sich eine eindeutig überlegene Variante ergibt. &
+ohne dass sich eine eindeutig überlegene Variante ergibt \cite{pongratz2026persuasive}. &
 Der Grad der Führung sollte nicht vorab abschließend festgelegt werden. &
 Wie viel Führung wird als hilfreich wahrgenommen, ohne bevormundend zu wirken? \\
 \hline
@@ -430,7 +428,7 @@ Akustisch $\leftrightarrow$ visuell / multimodal &
 Akustische Hinweise sind gut wahrnehmbar, können aber störend oder
 erschreckend sein. Visuelle Informationen können genauer sein, bergen während
 der Fahrt jedoch Ablenkungspotenzial. Die Literatur spricht grundsätzlich für
-multimodale Ansätze. &
+multimodale Ansätze \cite{detjen2021supporting}. &
 Die Modalität sollte nicht pauschal festgelegt, sondern abhängig von
 Informationstyp und Kritikalität gewählt werden. &
 Welche Modalität eignet sich für Erklärung, Statusinformation, Warnung und
