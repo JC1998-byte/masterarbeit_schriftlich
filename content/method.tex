@@ -5,6 +5,7 @@
 Diese Forschungsarbeit verfolgt einen gestaltungsorientierten Ansatz im Sinne von Design Science Research (DSR), welcher sich insbesondere für Forschungsvorhaben eignet, bei denen nicht ausschließlich bestehende Phänomene beschrieben oder erklärt werden sollen (Behavioral Science Research), sondern Lösungen für praxisnahe Problemstellungen entwickelt und wissenschaftlich evaluiert werden. Das Forschungsdesign orientiert sich dabei am DSR-Framework nach Hevner et al. \cite{hevner2004design} und nutzt das Prozessmodell nach Peffers et al. \cite{peffers2007design} zur Strukturierung des konkreten Forschungsvorgehens.
 
 \subsection{DSR-Framework}
+\label{subsec:DSR_Framework}
 
 Abbildung \ref{fig:Hevner} zeigt das DSR-Framework nach Hevner et al. \cite{hevner2004design}:
 
@@ -40,6 +41,7 @@ Im Zentrum des Frameworks steht der Design-Zyklus, der die Entwicklung und Evalu
 Das DSR-Framework von Hevner et al. \cite{hevner2004design} ermöglicht eine übergeordnete Einordnung der Forschungsarbeit in Anwendungskontext und wissenschaftliche Wissensbasis, strukturiert die einzelnen Forschungsaktivitäten jedoch nicht wie ein Prozessmodell. Aus diesem Grund soll im folgenden Abschnitt das DSR-Prozessmodell nach Peffers \cite{peffers2007design} zur Beantwortung dieser noch offenen Fragestellung verwendet werden.
 
 \subsection{DSR-Prozessmodell}
+\label{subsec:DSR_Prozessmodell}
 
 Abbildung \ref{fig:Peffers} zeigt das DSR-Prozessmodell nach Peffers et al. \cite{peffers2007design}.
 
@@ -102,12 +104,15 @@ Wissenschaftliche Dokumentation, Darstellung und Diskussion des Forschungsvorgeh
 Die nachfolgenden Abschnitte beschreiben die methodische Ausgestaltung der DSR-Aktivitäten im Detail.
 
 \section{Problemidentifizierung und Motivation}
+\label{sec:Methodik_Phase_eins}
 
 \subsection{Literaturrecherche}
+\label{subsec:Literaturrecherche}
 
 Die in Kapitel \ref{chapter:theory} vorgestellte wissenschaftliche Aufarbeitung des Problemraums erfolgte im Rahmen einer strukturierten Literaturrecherche, deren Auswahlprozess sich an den Grundprinzipien des PRISMA-Ansatzes \cite{page2021prisma} orientierte. 
 
 \subsubsection{Identifikation}
+\label{subsubsec:Identifikation}
 
 Die Recherche wurde in den Datenbanken 'IEEE Xplore', 'ACM Digital Library' sowie 'Google Scholar' durchgeführt. Für die Suche wurden mehrere thematische Blöcke gebildet und Suchbegriffe abgeleitet. Typischerweise wurde mindestens ein Begriff aus dem Block System/Funktion mit Begriffen aus den Bereichen Onboarding/Lernen, Interface/Gestaltung oder Zielgrößen kombiniert. Die konkrete Syntax wurde an die technischen Möglichkeiten der jeweiligen Datenbank angepasst. Ergänzend zur datenbankgestützten Recherche wurde eine Vorwärts- und Rückwärtssuche durchgeführt. Hierbei wurden die Literaturverzeichnisse besonders relevanter Publikationen auf weitere einschlägige Quellen geprüft und Publikationen berücksichtigt, die zentrale Arbeiten des Themenfelds zitieren. Tabelle \ref{tab:literatur_suchbegriffe} zeigt eine Übersicht der verwendeten Suchbegriffe.
 
@@ -243,25 +248,31 @@ Arbeiten ohne erkennbaren Bezug zur Forschungsfrage \\
 \end{table}
 
 \subsubsection{Vorauswahl}
+\label{subsubsec:Vorauswahl}
 
 Die identifizierten Publikationen wurden zunächst anhand von Titel und Abstract auf ihre thematische Relevanz geprüft. Publikationen, die mehrfach über unterschiedliche Datenbanken identifiziert wurden, wurden mithilfe eines Python-basierten Verfahrens zur Dublettenerkennung bereinigt.
 
 \subsubsection{Eignungsprüfung}
+\label{subsubsec:Eignungsprüfung}
 Bei ausreichender Relevanz erfolgte anschließend eine Prüfung des Volltexts anhand der definierten Ein- und Ausschlusskriterien auf einer tieferen Detailebene. 
 
 \subsubsection{Aufnahme}
+\label{subsubsec:Aufnahme}
 Die auf diese Weise ausgewählten Publikationen wurden anschließend inhaltlich hinsichtlich ihrer Relevanz für die Problemstellung der vorliegenden Arbeit ausgewertet. Im Fokus standen insbesondere Erkenntnisse zu Nutzungsschwierigkeiten und Fehlanwendungen von Fahrassistenzsystemen,
 relevanten Human Factors, bestehenden Informations- und Trainingsansätzen sowie möglichen Gestaltungsansätzen für die Vermittlung von Systemfunktionen und -grenzen. 
 
 \subsection{Qualitative Nutzer*inneninterviews}
+\label{subsec:Qualitative_Interviews}
 
 Ergänzend zur Literaturrecherche wurden qualitative Interviews mit der Zielgruppe des Forschungsgegenstands durchgeführt. Ziel war es, Erfahrungen, Unsicherheiten und Schwierigkeiten im Umgang mit Fahrassistenzsystemen sowie bestehende Informations- und Lernbedarfe zu erfassen. Im Fokus standen dabei insbesondere die bisherige Nutzung und Aneignung von Fahrassistenzsystemen, das Verständnis von Funktionen und Systemgrenzen sowie Erwartungen an die Vermittlung relevanter Informationen. Darüber hinaus sollten Präferenzen hinsichtlich des Zeitpunkts und der Form eines möglichen In-Car-Onboardings erhoben werden. Die Interviews ergänzen damit die aus der Literatur gewonnenen Erkenntnisse um die Perspektive potenzieller Nutzer*innen und bilden eine empirische Grundlage für die spätere Ableitung von Gestaltungsanforderungen.
 
 \subsubsection{Stichprobe und Rekrutierung}
+\label{subsubsec:Stichprobe_und_Rekrutierung}
 
 Die Zielgruppe der Interviews bildeten Personen mit einer innerhalb der Europäischen Union gültigen Fahrerlaubnis. Außerdem wurde eine Zusammensetzung angestrebt, welche divers anhand der Erfahrungsstände im Umgang mit Fahrzeugen und des biologischen Alters ist, um unterschiedliche Perspektiven beachten zu können. Insgesamt nahmen 11 Personen an den qualitativen Interviews teil, darunter fünf weibliche und sechs männliche Personen. Die Altersspanne umfasste einen Bereich von 25 bis 75 Jahren. Die Rekrutierung erfolgte über das persönliche Umfeld und universitäre Kontaktmöglichkeiten.
 
 \subsubsection{Interviewleitfaden}
+\label{subsubsec:Interviewleitfaden}
 
 Die Datenerhebung erfolgte mithilfe eines halbstrukturierten Interviewleitfadens. Diese Interviewform wurde gewählt, um einerseits vergleichbare Themenbereiche bei allen Teilnehmenden abzudecken und andererseits ausreichend Offenheit für individuelle Erfahrungen, Erläuterungen und Nachfragen zu gewährleisten.
 
@@ -270,11 +281,13 @@ Der Leitfaden umfasste zunächst Fragen zur bisherigen Erfahrung mit Fahrassiste
 Die Reihenfolge der Fragen diente dabei als Orientierung und konnte abhängig vom Gesprächsverlauf angepasst werden. Vertiefende Nachfragen wurden eingesetzt, um relevante Aussagen näher zu konkretisieren. Der vollständige Interviewleitfaden ist in Anhang \ref{sec:interviewleitfaden} dokumentiert.
 
 \subsubsection{Durchführung}
+\label{subsubsec:Durchführung}
 
 Die Interviews wurden im Zeitraum vom 07.08. bis zum 14.08.2026 durchgeführt und dauerten jeweils ungefähr 30 Minuten. Die Gespräche fanden sowohl in Präsenz als auch Online statt. Vor Beginn des Interviews wurden die Teilnehmenden über Ziel und Ablauf der Untersuchung sowie den Umgang mit den erhobenen Daten informiert.
 Alle Interviews wurden mit Einverständnis der Teilnehmenden aufgezeichnet und anschließend für die qualitative Auswertung mithilfe von Whisper \cite{radford2022whisper} transkribiert. Personenbezogene Angaben wurden im Rahmen der Aufbereitung anonymisiert und alle Texte noch einmal manuell überarbeitet. 
 
 \subsubsection{Kodierung und Auswertung}
+\label{subsubsec:Kodierung_und_Auswertung}
 
 Im Rahmen der Kodierung und Auswertung wurde eine qualitative Inhaltsanalyse nach Kuckartz \cite{kuckartz2014mixed} praktiziert. Die Arbeiten wurden mithilfe der der webbasierten QDA-Software 'OpenQDA' \cite{kuester2026openqda} durchgeführt, welche neben der Möglichkeit zur Kodierung von Dokumenten auch umfangreiche Textbearbeitungswerkzeuge zur Verfügung stellt.
 
@@ -303,17 +316,9 @@ Abbildung \ref{fig:Kuckartz} zeigt das Vorgehensmodell der Qualitativen Inhaltsa
 \end{figure}
 
 \section{Zielsetzung der Lösung}
+\label{sec:Methodik_Phase_zwei}
 
- In dieser DSR-Aktivität wurden die verdichteten Befunde aus dem letzten Schritt der qualitativen Inhaltsanalyse den in Kapitel \ref{chapter:theory} herausgearbeiteten Erkenntnissen aus dem Forschungsstand gegenübergestellt. Die Synthese erfolgte entlang gemeinsamer Themenbereiche, beispielsweise Systemverständnis, Systemgrenzen, Fahrer*innenrolle, Informationszeitpunkt und Darstellungsform. Für jedes Synthesethema wurde geprüft, inwieweit Literatur- und Interviewbefunde übereinstimmten, sich ergänzten oder unterschiedliche bzw. widersprüchliche Gestaltungsbedarfe erkennen ließen.
-
-Auf Grundlage dieser Synthese wurden zunächst übergeordnete Designprinzipien in Anlehnung an Gregor et al. \cite{gregor2020anatomy} und Maedche \cite{maedche2019structuring} formuliert. Diese beschreiben in präskriptiver Form, welche grundlegenden Gestaltungsziele das In-Car-Onboarding erfüllen sollte, ohne bereits eine konkrete technische oder gestalterische Umsetzung festzulegen. 
-
-Aus den Designprinzipien wurden in Anlehnung an Maedche \cite{maedche2019structuring} anschließend konkrete Design Requirements
-abgeleitet. Diese spezifizieren, welche Eigenschaften und Funktionen das
-In-Car-Onboarding aufweisen muss, damit die zuvor formulierten
-Designprinzipien umgesetzt werden können. Anforderungen, die sich aufgrund
-einer deutlichen Übereinstimmung von Literatur- und Interviewbefunden
-eindeutig ableiten ließen, wurden bereits an dieser Stelle festgelegt.
+In dieser DSR-Aktivität wurden die verdichteten Befunde aus dem letzten Schritt der qualitativen Inhaltsanalyse den in Kapitel \ref{chapter:theory} herausgearbeiteten Erkenntnissen aus dem Forschungsstand gegenübergestellt. Die Synthese erfolgte entlang gemeinsamer Themenbereiche, beispielsweise Systemverständnis, Systemgrenzen, Fahrer*innenrolle, Informationszeitpunkt und Darstellungsform. Für jedes Synthesethema wurde geprüft, inwieweit Literatur- und Interviewbefunde übereinstimmten, sich ergänzten oder unterschiedliche bzw. widersprüchliche Gestaltungsbedarfe erkennen ließen.
 
 Bei Themen, für die zwar ein grundlegendes Gestaltungsziel erkennbar war, die
 konkrete Ausprägung jedoch offen blieb, wurden zusätzlich Spannungsfelder
@@ -323,9 +328,35 @@ Umfang der Personalisierung, die Verteilung von Informationen vor und während
 der Fahrt sowie die Wahl geeigneter Darstellungsmodalitäten. Solche
 Spannungsfelder wurden bewusst nicht durch eine vorab festgelegte
 Gestaltungslösung aufgelöst, sondern als offene Gestaltungsfragen in die
-nachfolgende partizipative Konzeptentwicklung überführt.
+nachfolgende partizipative Konzeptentwicklung überführt. 
+
+Auf Grundlage der Synthese wurden anschließend zunächst übergeordnete Designprinzipien in Anlehnung an Gregor et al. \cite{gregor2020anatomy} und Maedche \cite{maedche2019structuring} formuliert. Diese beschreiben in präskriptiver Form, welche grundlegenden Gestaltungsziele das In-Car-Onboarding erfüllen sollte, ohne bereits eine konkrete technische oder gestalterische Umsetzung festzulegen. Abbildung \ref{fig:Schablone_DP} zeigt die Schablone zur Formulierung von Design Prinzipien nach Maedche \cite{maedche2019structuring}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/method/Schablone_DP.png}
+    \caption{Satzschablonen zur Formulierung von Designprinzipien}
+    \label{fig:Schablone_DP}
+    \medskip
+    {\footnotesize Quelle: Entnommen aus \cite[S.~22]{dogangun2025dsr}.}
+\end{figure}
+
+Aus den Designprinzipien wurden in Anlehnung an Iivari \cite{iivari2020critical} und Maedche \cite{maedche2019structuring} anschließend konkrete Design Requirements abgeleitet. Diese spezifizieren, welche Eigenschaften und Funktionen das In-Car-Onboarding aufweisen muss, damit die zuvor formulierten
+Designprinzipien umgesetzt werden können. Anforderungen, die sich aufgrund
+einer deutlichen Übereinstimmung von Literatur- und Interviewbefunden
+eindeutig ableiten ließen, wurden bereits an dieser Stelle festgelegt. Abbildung \ref{fig:Schablone_DR} zeigt ein Template zur Formulierung von Design Requirements nach Maedche \cite{maedche2019structuring}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/method/Schablone_DR.png}
+    \caption{Template zur Formulierung von Design Requirements}
+    \label{fig:Schablone_DR}
+    \medskip
+    {\footnotesize Quelle: Entnommen aus \cite[S.~26]{dogangun2025dsr}.}
+\end{figure}
 
 \section{Design und Entwicklung}
+\label{Methodik_Phase_drei}
 
 Auf Grundlage der zuvor abgeleiteten Designprinzipien und Design Requirements
 wurde im Rahmen dieser DSR-Aktivität ein
@@ -346,8 +377,10 @@ somit nicht die erneute Anforderungsanalyse, sondern die partizipative
 Konkretisierung der Anforderungen in Form potenzieller Design Features.
 
 \subsection{Partizipativer Workshop}
+\label{subsec:Partizipativer_Workshop}
 
 \subsubsection{Aufbau und methodische Struktur}
+\label{subsubsec:Aufbau_und_methodische_Struktur}
 
 Der Ablauf des Workshops orientierte sich am 4C-Framework nach Courtney
 \cite{courtney2020workshopper}. Das Framework strukturiert Workshops anhand der
@@ -358,6 +391,7 @@ Der vollständige Workshop umfasste eine Dauer von etwa
 Leitfaden ist in Anhang \ref{sec:workshopleitfaden} dokumentiert.
 
 \subsubsection{Collect: Erfassung des Problemverständnisses}
+\label{subsubsec:Collect}
 
 Zu Beginn der inhaltlichen Arbeit wurden die Informationsbedarfe,
 Unsicherheiten und Erwartungen der Teilnehmenden zunächst ohne Vorgabe der
@@ -373,6 +407,7 @@ eigenständige Perspektiven gesammelt wurden, bevor eine gemeinsame Diskussion
 stattfand. Anschließend wurden die Beiträge für alle sichtbar zusammengeführt und inhaltlich unter Zuhilfenahme von Inhaltskarten, welche sich aus dem Forschungsstand und den abgeleiteten Design Requirements ergaben, gruppiert. Die Inhaltskarten umfassten den Zweck der Assistenzfunktion, deren Bedienung, Systemstatus, Funktionsweise und Eingriffe, Einsatzbedingungen, Systemgrenzen, die Rolle der fahrzeugführenden Person, Anzeigen und Warnungen sowie das Verhalten bei Systemgrenzen. Die Moderation nahm hierbei keine inhaltliche Bewertung der Beiträge vor.
 
 \subsubsection{Choose: Priorisierung von Inhalten und Informationszeitpunkten}
+\label{subsubsec:Choose}
 
 In der anschließenden Choose-Phase wurden die zuvor gesammelten
 Informationsbedarfe fokussiert und priorisiert. Zunächst priorisierten die Teilnehmenden die Inhalte individuell mittels Klebepunkten. Darauf aufbauend wurden die Inhalte gemeinsam danach eingeordnet, ob sie mit höchster Priorität vermittelt werden müssen, für den Einstieg hilfreich sind oder erst später beziehungsweise bei Bedarf vertieft werden können.
@@ -386,6 +421,7 @@ Zusätzlich wurde diskutiert, ob sich der erforderliche Informationsumfang
 zwischen den jeweiligen Zeitpunkten unterscheiden sollte.
 
 \subsubsection{Create: Entwicklung konkreter Gestaltungsideen}
+\label{subsubsec:Create}
 
 Nach der offenen Sammlung und Priorisierung wurden die zuvor abgeleiteten
 Design Requirements in den Workshop eingeführt. Um die Teilnehmenden nicht mit
@@ -433,6 +469,7 @@ Die entstandenen Paper Prototypes und Storyboards dienten als Grundlage für
 die anschließende Bewertung.
 
 \subsubsection{Commit: Bewertung und Verdichtung}
+\label{subsubsec:Commit}
 
 In der abschließenden Commit-Phase wurden die während des Workshops
 entwickelten Gestaltungsideen gemeinsam bewertet und verdichtet. Dabei wurde
@@ -452,5 +489,7 @@ Design Features jeweils auf die zugrunde liegenden Design Requirements sowie
 auf ihre Entstehung im Workshop zurückgeführt werden.
 
 \section{Demonstration}
+\label{sec:Methodik_Phase_vier}
 
 \section{Evaluation}
+\label{sec:Methodik_Phase_fünf}
