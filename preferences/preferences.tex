@@ -97,7 +97,26 @@
 \usepackage{float}
 \usepackage{longtable}
 \usepackage{array}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\usepackage{xltabular}
+\usepackage[table]{xcolor}
+
 \renewcommand\thesubfigure{\roman{subfigure}}
+
+\newcolumntype{Y}{%
+    >{\RaggedRight\arraybackslash\hspace{0pt}}X%
+}
+
+\newcolumntype{P}[1]{%
+    >{\RaggedRight\arraybackslash\hspace{0pt}}p{#1}%
+}
+
+\newcommand{\rowrule}{%
+    \arrayrulecolor{black!20}%
+    \specialrule{0.3pt}{0.35em}{0.35em}%
+    \arrayrulecolor{black}%
+}
 
 % set vertical distance after single paragraph
 \parskip6pt
