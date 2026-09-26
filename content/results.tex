@@ -776,6 +776,8 @@ Abbildung \ref{fig:W2_Commit} zeigt die abschließende Gegenüberstellung der Ge
 
 Es zeigt sich, dass im Gegensatz zum ersten Workshop die genutzten Screens nahezu gleich zwischen beiden Szenarien verteilt sind. Allerdings sind die Klebepunkte und damit die Anzahl besonders hervorzuhebender Gestaltungselemente nicht gleichverteilt zwischen den den einzelnen Entwürfen. Stattdessen konzentrieren sie sich auf je zwei Gestaltungsentwürfe pro Szenario. Eine detaillierte Darstellung der Gestaltungsentwürfe findet sich analog zum ersten Workshop in Anhang \ref{sec:gestaltungslösungen_w2}.
 
+Nachfolgend wurde eine Matrix (siehe Tabelle \ref{tab:analysematrix_workshops}) angefertigt, um die Entwürfe der verschiedenen Gruppen innerhalb der Workshops systematisch auszuwerten. In der ersten Spalte ist in Klammern die zuvor erwähnte Originaldarstellung im Anhang aufgeführt, auf welche sich die Analyse bezieht. Mögliche Gegenpositionen innerhalb und zwischen den Workshops werden transparent dargestellt.
+
 {
 \setlength{\tabcolsep}{2.2pt}
 \renewcommand{\arraystretch}{1.15}
@@ -1085,12 +1087,14 @@ Visuell; Kombiinstrument &
 
 \bottomrule
 
-\caption{Analysematrix der Gestaltungselemente des ersten und zweiten partizipativen Workshops}
+\caption{Analysematrix der Gestaltungselemente aus den Entwürfen der partizipativen Workshops}
 \label{tab:analysematrix_workshops}
 \\
 
 \end{xltabular}
 }
+
+Tabelle \ref{tab:verbalisierte_praeferenzen_workshops} ergänzt zusätzlich Gesprächsinhalte bzgl. der offenen Fragen aus dem Leitfaden, welche nicht durch das Fotoprotokoll abgedeckt werden. Die Gesprächsinhalte wurden von der Moderation während der Workshops verschriftlicht, da in keinem Workshop alle Teilnehmer*innen Bild- oder Tonaufnahmen zugestimmt haben.
 
 {
 \setlength{\tabcolsep}{3pt}
@@ -1264,7 +1268,7 @@ Kein erkennbarer Dissens
 
 \bottomrule
 
-\caption{Verbalisierte Präferenzen und Dissense im ersten und zweiten partizipativen Workshop}
+\caption{Verschriftliche Gesprächsinhalte der partizipativen Workshops}
 \label{tab:verbalisierte_praeferenzen_workshops}
 \\
 
@@ -1274,6 +1278,108 @@ Kein erkennbarer Dissens
 
 \subsection{Design Features}
 \label{subsec:Ergebnisse_Design_Features}
+
+Tabelle \ref{tab:design_features} zeigt die aus den Workshops und den Design Requirements abgeleiteten Design Features.
+
+{
+\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{4pt}
+
+\begin{xltabular}{\textwidth}{
+    |p{0.9cm}
+    |p{3.1cm}
+    |X
+    |p{2.1cm}
+    |X|
+}
+
+\hline
+\textbf{ID} &
+\textbf{Design Feature} &
+\textbf{Konkrete Umsetzung} &
+\textbf{Bezug zu Design Requirements} &
+\textbf{Grundlage aus den Workshops}
+\\
+\hline
+\endfirsthead
+
+\hline
+\textbf{ID} &
+\textbf{Design Feature} &
+\textbf{Konkrete Umsetzung} &
+\textbf{Bezug zu Design Requirements (siehe \ref{tab:design-requirements})} &
+\textbf{Grundlage aus den Workshops (siehe \ref{tab:analysematrix_workshops})}
+\\
+\hline
+\endhead
+
+\hline
+\multicolumn{5}{r}{Fortsetzung auf der nächsten Seite}
+\\
+\endfoot
+
+\endlastfoot
+
+
+DF-01 &
+Geführte multimediale Einführung im Center Display &
+Vor der ersten Fahrt wird eine kurze, geführte Einführung über das Center Display bereitgestellt. Zentrales Vermittlungsmedium ist ein kurzes Video, das durch einfache visuelle Screens beziehungsweise Symbole ergänzt werden kann. &
+DR-01, DR-07, DR-10, DR-12 &
+Gestaltungselemente 1, 4 und 14. Videos im Center Display wurden zudem in der gemeinsamen Reflexion beider Workshops ausdrücklich als geeignete Vermittlungsform für das Onboarding vor Fahrtantritt hervorgehoben.
+\\
+\hline
+
+DF-02 &
+Verbindlicher Erst-Durchlauf des Sicherheitskerns &
+Bei der erstmaligen Nutzung werden zentrale sicherheitsrelevante Einführungsschritte nacheinander durchlaufen. Der verbindliche Informationskern muss abgeschlossen werden, bevor das Onboarding beendet beziehungsweise die Assistenzfunktion regulär genutzt wird. &
+DR-07, DR-12 &
+Gestaltungselemente 11 und 14 konkretisieren einen verbindlichen Erst-Durchlauf. Gestaltungselement 15 sieht zugleich vor, dass das Tutorial nach dem erstmaligen Absolvieren bei späterer Nutzung übersprungen werden kann.
+\\
+\hline
+
+DF-03 &
+Wiederaufrufbarer Informationsbereich &
+Im Menü der Assistenzsysteme bleibt das Onboarding dauerhaft erreichbar. Bereits vermittelte Inhalte können erneut aufgerufen und weiterführende Informationen bei Bedarf vertieft werden. &
+DR-11, DR-12 &
+Gestaltungselemente 10, 12 und 15 sehen einen erneuten Zugriff auf bereits vermittelte Inhalte sowie bedarfsgerechte Vertiefungsmöglichkeiten vor.
+\\
+\hline
+
+DF-04 &
+Eindeutige Systemstatusanzeige &
+Der Status des Spurhalteassistenten wird durch konsistente visuelle Symbole und kurze Textinformationen eindeutig als aktiv, eingeschränkt beziehungsweise inaktiv dargestellt. &
+DR-02, DR-09, DR-10 &
+Gestaltungselemente 9 und 16-20 greifen unterschiedliche Formen der Statuskommunikation auf. Im ersten Workshop wurde zudem ausdrücklich hervorgehoben, dass Missverständnisse hinsichtlich des Aktivitätsstatus besonders problematisch sind.
+\\
+\hline
+
+DF-05 &
+Situationsbezogene Grenzwarnung mit abgestufter Dringlichkeit &
+Wird eine relevante Systemgrenze erreicht, erscheint unmittelbar eine kurze situationsbezogene Warnung mit Symbol und Statusinformation. Bei höherer Kritikalität kann die visuelle Warnung durch ein akustisches Signal beziehungsweise eine deutlich hervorgehobene Warnstufe ergänzt werden. &
+DR-04, DR-07, DR-08, DR-09, DR-10 &
+Gestaltungselemente 7-9 und 17-23 enthalten unterschiedliche Varianten situationsbezogener Warnungen. Die Gestaltungselemente 8 und 23 erhielten jeweils fünf Klebepunkte. Hinsichtlich des konkreten Darstellungsortes zeigten sich zwischen den Workshops unterschiedliche Präferenzen.
+\\
+\hline
+
+DF-06 &
+Handlungsorientierte Information bei Systemgrenzen &
+Eine situationsbezogene Warnung informiert nicht nur über den aktuellen Systemzustand, sondern benennt kurz die erforderliche Reaktion der fahrenden Person, beispielsweise die Übernahme der Fahrzeugführung oder die Deaktivierung des Assistenten. Weiterführende Erklärungen können ergänzend über das Center Display bereitgestellt werden. &
+DR-04, DR-05, DR-08 &
+Gestaltungselemente 13, 21 und 22 greifen die Deaktivierung, die Erklärung einer Systemgrenze und konkrete Handlungsoptionen auf. Im ersten Workshop wurde zusätzlich ein deutlicher Informationsbedarf hinsichtlich der Deaktivierung des Spurhalteassistenten geäußert.
+\\
+\hline
+
+\caption{Aus den Design Requirements und den Ergebnissen der partizipativen Workshops abgeleitete Design Features}
+\label{tab:design_features}
+\\
+
+\end{xltabular}
+}
+
+Es wird an dieser Stelle deutlich, dass nicht zu allen zuvor festgelegten Design Requirements (siehe \ref{tab:design-requirements}) ein Bezug in der Tabelle besteht. Die Design Requirement 03, 06, 13 und 14 könnten nur dann zugeordnet werden, wenn die konkrete Umsetzung im Workshopmaterial nachvollziehbar belegt werden kann. Gleichwohl erscheint es zielführend, diese zumindest implizit für die Gestaltung des Simulatorszenarios zu berücksichtigen. 
+
+Für die Design Features ist zu beachten, dass von den Proband*innen in den partizipativen Workshops aus zeitlichen Gründen nicht verlangt werden konnte, zwei verschiedene Szenarien so detailliert auszuarbeiten, dass diese sich einerseits mit den Limitationen einer Simulationsumgebung im Einklang befinden und andererseits so umfangreich sind, dass es sich um nahezu perfekte Blaupausen für die konkrete Umsetzung handelt. Stattdessen sollten diese bestmöglich und unter Achtung der Erkenntnisse aus der Literatur sowie vorhandenem Expertenwissen umgesetzt werden.  
 
 \section{Demonstration}
 \label{Ergebnisse_Phase_vier}
