@@ -11,53 +11,93 @@ Zunächst sollen in diesem Unterkapitel Grundlagen in Bezug auf die Mensch-Masch
 \label{subsec:fahraufgabe}
 Zur besseren Abgrenzung der Aufgabenbereiche von Fahrer*innen und Fahrassistenzsystemen, wird an dieser Stelle zunächst erstgenannter definiert. Geisler \cite{Geisler_hci2021} nennt den sicheren Transport vom Ausgangs- zum Zielort als Haupt- oder Primäraufgabe der Fahrer*innen und verweist auf unterstützende Aufgaben, die zur Erfüllung der primären Aufgabe notwendig sind.
 
-\begin{table}[ht]
-\centering
-\caption{Einteilung von Fahraufgaben aus Sicht der Fahrer*innen}
-\label{tab:fahraufgaben}
+{
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
 
-\begin{tabular}{|p{0.29\textwidth}|p{0.34\textwidth}|p{0.29\textwidth}|}
+\begin{xltabular}{\textwidth}{
+    |P{0.29\textwidth}
+    |P{0.34\textwidth}
+    |Y|
+}
+
 \hline
+
 \textbf{Primäre Aufgabe} &
 \textbf{Sekundäre Aufgabe} &
 \textbf{Tertiäre Aufgabe}
-\\ \hline
+\\
+\hline
+\endfirsthead
+
+\multicolumn{3}{c}{%
+    \tablename\ \thetable{} -- Fortsetzung%
+}
+\\
+\hline
+
+\textbf{Primäre Aufgabe} &
+\textbf{Sekundäre Aufgabe} &
+\textbf{Tertiäre Aufgabe}
+\\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{Fortsetzung auf der nächsten Seite}
+\\
+\endfoot
+
+\endlastfoot
+
 
 Transport der Personen beziehungsweise Güter &
 Zusätzliche fahraufgabenbezogene Tätigkeiten abhängig von primärer Fahraufgabe &
 Nicht verbunden mit der Fahraufgabe
-\\ \hline
+\\
+\hline
 
 Navigation: Planung der Route &
 Interaktion mit anderen Verkehrsteilnehmenden: blinken, hupen, Handzeichen geben &
 Komfort: Klimaanlage, Sitzheizung, Panoramadach, Massagesitz
-\\ \hline
+\\
+\hline
 
 Führung: Festlegung von Soll-Geschwindigkeit und Kurs (Fahrspur), beides in der Regel situationsabhängig &
 Reaktionen auf die Umwelt: Steuerung von Licht, Scheibenwischer, Heckscheibenheizung, Gangwechsel &
 Unterhaltung, Information: Radio und Mediaplayer, Verkehrsinformationen
-\\ \hline
+\\
+\hline
 
 Stabilisierung: Längs- und Querdynamik, das heißt Beschleunigen/Bremsen und Lenken &
 &
 Kommunikation: Telefon, Kurznachrichten
-\\ \hline
+\\
+\hline
 
 Notwendig zur Erreichung des Ziels &
 Erreichung des Ziels auch ohne diese Tätigkeiten möglich, aber mit erheblichen Einschränkungen &
 Erreichung des Ziels auch ohne diese Tätigkeiten möglich
-\\ \hline
+\\
+\hline
 
 Teilweise extrem zeitkritisch (Stabilisierungsaufgabe) &
 Geringe zeitliche Anforderungen &
 Keine zeitlichen Anforderungen
-\\ \hline
-\end{tabular}
+\\
+\hline
+
+\caption{Einteilung von Fahraufgaben aus Sicht der Fahrer*innen}
+\label{tab:fahraufgaben}
+\\
+
+\end{xltabular}
 
 \medskip
 {\footnotesize Quelle: Tabelle inhaltlich übernommen aus
 \cite[S.~365]{Geisler_hci2021}.}
-\end{table}
+}
 
 Tabelle \ref{tab:fahraufgaben} zeigt die an Geiser \cite{Geiser1985}, Bubb \cite{bubb2015automobilergonomie} und Donges \cite{donges2015fahrerverhaltensmodelle} angelehnte Einteilung von Fahraufgaben aus Sicht der Fahrer*innen nach Darstellung von Geisler \cite{Geisler_hci2021}. Es wird an dieser Stelle deutlich, dass der große Aufgabenbereich der fahrzeugführenden Person mit teilweise kokurrierenden Aufgaben, für eine selektiv arbeitende menschlichen Aufmerksamkeit \cite{Broadbent1958} eine große Herausforderung darstellt, weswegen eine Priorisierung der Unterstützungstätigkeiten für die Aufgaben obligatorisch erscheint. Geisler \cite{Geisler_hci2021} konstatiert, dass im Hinblick auf Sicherheitsaspekte zudem darauf zu achten sei, dass bei den primären Aufgaben die Beherrschbarkeit der Funktionen und bei tertiären Aufgaben eine möglichst geringe Ablenkung sicherzustellen sind. Die Empfehlungen für die sekundären Aufgaben seien als Kombination der zuletzt genannten Empfehlungen zu verstehen, so der Forscher \cite{Geisler_hci2021}. 
 

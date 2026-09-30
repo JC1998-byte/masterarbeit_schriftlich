@@ -58,48 +58,80 @@ Das Modell konkretisiert DSR in sechs aufeinander bezogenen Aktivitäten, wobei 
 
 Die Aktivität 'Problemidentifikation und Motivation' umfasst die Untersuchung des bestehenden Forschungsstands sowie die Erhebung der Erfahrungen, Erwartungen und Informationsbedarfe potenzieller Nutzer*innen. Ziel ist es, die zugrunde liegende Problemstellung sowohl aus wissenschaftlicher als auch aus Nutzer*innenperspektive zu konkretisieren und ihre Relevanz für die Entwicklung eines In-Car-Onboardings zu begründen. Darauf aufbauend werden im Rahmen der Aktivität 'Zielsetzung der Lösung' die Erkenntnisse aus Literatur und Nutzer*inneninterviews systematisch zusammengeführt und in konkrete Gestaltungsanforderungen für das In-Car-Onboarding überführt. Diese Anforderungen dienen als Grundlage für die nachfolgende Gestaltung des Artefakts. Die Aktivität 'Design und Entwicklung' umfasst die partizipative Entwicklung eines In-Car-Onboarding-Konzepts sowie dessen prototypische Umsetzung. Die zuvor abgeleiteten Gestaltungsanforderungen werden hierbei in eine konkrete Gestaltungslösung überführt. Im Rahmen der 'Demonstration' wird der entwickelte Prototyp in definierten Fahrsituationen innerhalb eines Fahrsimulators eingesetzt. Dadurch wird die Anwendung des Artefakts in einem kontrollierten, fahrnahen Nutzungskontext ermöglicht. Die anschließende 'Evaluation' untersucht, inwiefern der entwickelte Prototyp die zuvor definierten Zielsetzungen erfüllt. Dabei wird insbesondere betrachtet, in welchem Umfang das In-Car-Onboarding das Systemverständnis sowie ein angemessenes Nutzungsverhalten unterstützt. Die Aktivität 'Kommunikation' erfolgt übergreifend durch die wissenschaftliche Dokumentation, Darstellung und Diskussion des Forschungsvorgehens und der gewonnenen Ergebnisse im Rahmen dieser Masterarbeit. Tabelle \ref{tab:dsr-aktivitaeten} zeigt die Übertragung der DSR-Aktivitäten auf die vorliegende Forschungsarbeit noch einmal übersichtlich.
 
-\begin{table}[ht]
-\centering
-\renewcommand{\arraystretch}{1.35}
+{
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
 
-\begin{tabular}{
-|p{0.30\textwidth}|
- p{0.60\textwidth}|
+\begin{xltabular}{\textwidth}{
+    |P{0.30\textwidth}
+    |Y|
 }
+
 \hline
+
 \textbf{DSR-Aktivität} &
-\textbf{Umsetzung in dieser Forschungsarbeit} \\
+\textbf{Umsetzung in dieser Forschungsarbeit}
+\\
 \hline
+\endfirsthead
+
+\multicolumn{2}{c}{%
+    \tablename\ \thetable{} -- Fortsetzung%
+}
+\\
+\hline
+
+\textbf{DSR-Aktivität} &
+\textbf{Umsetzung in dieser Forschungsarbeit}
+\\
+\hline
+\endhead
+
+\hline
+\multicolumn{2}{r}{Fortsetzung auf der nächsten Seite}
+\\
+\endfoot
+
+\endlastfoot
+
 
 Problemidentifikation und Motivation &
-Analyse des bestehenden Forschungsstands sowie qualitative Nutzer*inneninterviews zur Erfassung von Problemen, Erfahrungen, Erwartungen und Informationsbedarfen \\
+Analyse des bestehenden Forschungsstands sowie qualitative Nutzer*inneninterviews zur Erfassung von Problemen, Erfahrungen, Erwartungen und Informationsbedarfen
+\\
 \hline
 
 Zielsetzung der Lösung &
-Systematische Zusammenführung der Erkenntnisse aus Literatur und Interviews sowie Ableitung konkreter Gestaltungsanforderungen für das In-Car-Onboarding \\
+Systematische Zusammenführung der Erkenntnisse aus Literatur und Interviews sowie Ableitung konkreter Gestaltungsanforderungen für das In-Car-Onboarding
+\\
 \hline
 
 Design und Entwicklung &
-Partizipative Entwicklung eines In-Car-Onboarding-Konzepts und prototypische Umsetzung auf Basis der zuvor abgeleiteten Gestaltungsanforderungen \\
+Partizipative Entwicklung eines In-Car-Onboarding-Konzepts und prototypische Umsetzung auf Basis der zuvor abgeleiteten Gestaltungsanforderungen
+\\
 \hline
 
 Demonstration &
-Einsatz des entwickelten Prototyps in definierten Fahrsituationen innerhalb des Fahrsimulators \\
+Einsatz des entwickelten Prototyps in definierten Fahrsituationen innerhalb des Fahrsimulators
+\\
 \hline
 
 Evaluation &
-Bewertung des Prototyps hinsichtlich der zuvor definierten Zielsetzungen, insbesondere in Bezug auf Systemverständnis und angemessenes Nutzungsverhalten \\
+Bewertung des Prototyps hinsichtlich der zuvor definierten Zielsetzungen, insbesondere in Bezug auf Systemverständnis und angemessenes Nutzungsverhalten
+\\
 \hline
 
 Kommunikation &
-Wissenschaftliche Dokumentation, Darstellung und Diskussion des Forschungsvorgehens und der gewonnenen Ergebnisse im Rahmen der Masterarbeit \\
+Wissenschaftliche Dokumentation, Darstellung und Diskussion des Forschungsvorgehens und der gewonnenen Ergebnisse im Rahmen der Masterarbeit
+\\
 \hline
-
-\end{tabular}
 
 \caption{Übertragung der DSR-Aktivitäten nach Peffers et al. auf die vorliegende Forschungsarbeit}
 \label{tab:dsr_aktivitaeten}
-\end{table}
+\\
+
+\end{xltabular}
+}
 
 Die nachfolgenden Abschnitte beschreiben die methodische Ausgestaltung der DSR-Aktivitäten im Detail.
 
@@ -116,33 +148,61 @@ Die in Kapitel \ref{chapter:theory} vorgestellte wissenschaftliche Aufarbeitung 
 
 Die Recherche wurde in den Datenbanken 'IEEE Xplore', 'ACM Digital Library' sowie 'Google Scholar' durchgeführt. Für die Suche wurden mehrere thematische Blöcke gebildet und Suchbegriffe abgeleitet. Typischerweise wurde mindestens ein Begriff aus dem Block System/Funktion mit Begriffen aus den Bereichen Onboarding/Lernen, Interface/Gestaltung oder Zielgrößen kombiniert. Die konkrete Syntax wurde an die technischen Möglichkeiten der jeweiligen Datenbank angepasst. Ergänzend zur datenbankgestützten Recherche wurde eine Vorwärts- und Rückwärtssuche durchgeführt. Hierbei wurden die Literaturverzeichnisse besonders relevanter Publikationen auf weitere einschlägige Quellen geprüft und Publikationen berücksichtigt, die zentrale Arbeiten des Themenfelds zitieren. Tabelle \ref{tab:literatur_suchbegriffe} zeigt eine Übersicht der verwendeten Suchbegriffe.
 
-\begin{table}[H]
-\centering
-\renewcommand{\arraystretch}{1.25}
+{
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
 
-\begin{tabular}{
-|>{\raggedright\arraybackslash}p{0.20\textwidth}|
->{\raggedright\arraybackslash}p{0.24\textwidth}|
->{\raggedright\arraybackslash}p{0.46\textwidth}|
+\begin{xltabular}{\textwidth}{
+    |P{0.20\textwidth}
+    |P{0.24\textwidth}
+    |Y|
 }
+
 \hline
+
 \textbf{Block} &
 \textbf{Inhaltlicher Fokus} &
-\textbf{Verwendete Suchbegriffe} \\
+\textbf{Verwendete Suchbegriffe}
+\\
 \hline
+\endfirsthead
+
+\multicolumn{3}{c}{%
+    \tablename\ \thetable{} -- Fortsetzung%
+}
+\\
+\hline
+
+\textbf{Block} &
+\textbf{Inhaltlicher Fokus} &
+\textbf{Verwendete Suchbegriffe}
+\\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{Fortsetzung auf der nächsten Seite}
+\\
+\endfoot
+
+\endlastfoot
+
 
 A: System/Funktion &
 Fahrassistenz und Automatisierung &
 ADAS, advanced driver assistance system*, driver assistance system*,
 driver assistance, adaptive cruise control, ACC,
-lane keeping assist, lane centering, parking assist \\
+lane keeping assist, lane centering, parking assist
+\\
 \hline
 
 B: Onboarding/Lernen &
 Einführung in die Nutzung und Wissensvermittlung &
 onboarding, user onboarding, training, driver training,
 tutorial*, instruction*, education, familiarization,
-information provision, user manual, owner's manual \\
+information provision, user manual, owner's manual
+\\
 \hline
 
 C: Interface/Gestaltung &
@@ -150,7 +210,8 @@ Gestaltung und Vermittlungsform &
 in-car HMI, in-vehicle HMI, automotive HMI,
 human-machine interface, human-vehicle interaction,
 interaction design, UX, multimodal interface,
-AR tutorial, explanation, feedback \\
+AR tutorial, explanation, feedback
+\\
 \hline
 
 D: Zielgrößen &
@@ -159,93 +220,132 @@ safe use, correct use, appropriate use, misuse,
 disuse, overreliance, overtrust, trust calibration,
 mental model*, situation awareness, system understanding,
 comprehension, understanding, task performance,
-user acceptance \\
+user acceptance
+\\
 \hline
 
 E: Nutzer*innen/Kontext &
 Zielgruppe und Nutzungssituation &
 first-time users, novice users, drivers, everyday use,
-real-world use, take-over, monitoring, driver engagement \\
+real-world use, take-over, monitoring, driver engagement
+\\
 \hline
-
-\end{tabular}
 
 \caption{Thematische Suchblöcke und verwendete Suchbegriffe der Literaturrecherche}
 \label{tab:literatur_suchbegriffe}
-\end{table}
+\\
+
+\end{xltabular}
+}
 
 Darüber hinaus wurden die in Tabelle \ref{tab:literatur_einschlusskriterien} gezeigten Ein- und Ausschlusskriterien definiert, um die Relevanz der Suchergebnisse für den Forschungsgegenstand gewährleisten zu können. 
 
-\begin{table}[H]
-\centering
-\renewcommand{\arraystretch}{1.25}
+{
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
 
-\begin{tabular}{
-|>{\raggedright\arraybackslash}p{0.22\textwidth}|
->{\raggedright\arraybackslash}p{0.24\textwidth}|
->{\raggedright\arraybackslash}p{0.22\textwidth}|
->{\raggedright\arraybackslash}p{0.22\textwidth}|
+\begin{xltabular}{\textwidth}{
+    |P{0.22\textwidth}
+    |P{0.24\textwidth}
+    |P{0.22\textwidth}
+    |Y|
 }
+
 \hline
+
 \textbf{Kriterium} &
 \textbf{Beschreibung} &
 \textbf{Inkludiert} &
-\textbf{Exkludiert} \\
+\textbf{Exkludiert}
+\\
 \hline
+\endfirsthead
+
+\multicolumn{4}{c}{%
+    \tablename\ \thetable{} -- Fortsetzung%
+}
+\\
+\hline
+
+\textbf{Kriterium} &
+\textbf{Beschreibung} &
+\textbf{Inkludiert} &
+\textbf{Exkludiert}
+\\
+\hline
+\endhead
+
+\hline
+\multicolumn{4}{r}{Fortsetzung auf der nächsten Seite}
+\\
+\endfoot
+
+\endlastfoot
+
 
 Zeitraum: Kernliteratur &
 Aktueller Forschungsstand und empirische Arbeiten &
 2020--2026 &
-Publikationen vor 2020, sofern keine begründete Ausnahme vorliegt \\
+Publikationen vor 2020, sofern keine begründete Ausnahme vorliegt
+\\
 \hline
 
 Zeitraum: Hintergrundliteratur &
 Ergänzende Arbeiten zur Einordnung des Forschungsfelds &
 2015--2019 &
-Publikationen vor 2015, sofern keine grundlegende Relevanz besteht \\
+Publikationen vor 2015, sofern keine grundlegende Relevanz besteht
+\\
 \hline
 
 Zeitraum: Ausnahmen &
 Grundlagenliteratur, etablierte Modelle, Normen oder zentrale ältere Arbeiten &
 Begründete Einzelfälle vor 2015 &
--- \\
+--
+\\
 \hline
 
 Sprache &
 Sprachliche Zugänglichkeit der Publikationen &
 Deutsch und Englisch &
-Andere Sprachen \\
+Andere Sprachen
+\\
 \hline
 
 Publikationstyp &
 Wissenschaftliche Qualität und Nachvollziehbarkeit &
 Peer-reviewte Zeitschriften- und Konferenzbeiträge &
-Reports, Policy Papers, Working Papers, Newsletter, Regierungsdokumente, Patente und nichtwissenschaftliche Veröffentlichungen \\
+Reports, Policy Papers, Working Papers, Newsletter, Regierungsdokumente, Patente und nichtwissenschaftliche Veröffentlichungen
+\\
 \hline
 
 Quellentyp &
 Berücksichtigung wissenschaftlich geeigneter Publikationsformen &
 Zeitschriftenartikel, begutachtete Konferenzbeiträge, Bücher und Buchkapitel &
--- \\
+--
+\\
 \hline
 
 Volltextzugang &
 Ausreichende Grundlage für die inhaltliche Bewertung &
 Publikationen mit verfügbarem Volltext &
-Kein Volltextzugang trotz angemessener Beschaffungsversuche \\
+Kein Volltextzugang trotz angemessener Beschaffungsversuche
+\\
 \hline
 
 Thematische Relevanz &
 Bezug zur Forschungsfrage und zum Untersuchungsgegenstand &
 Arbeiten zu Fahrassistenzsystemen, Onboarding, Training, Informationsvermittlung, HMI, Systemverständnis oder angemessener Nutzung &
-Arbeiten ohne erkennbaren Bezug zur Forschungsfrage \\
+Arbeiten ohne erkennbaren Bezug zur Forschungsfrage
+\\
 \hline
-
-\end{tabular}
 
 \caption{Ein- und Ausschlusskriterien der Literaturrecherche}
 \label{tab:literatur_einschlusskriterien}
-\end{table}
+\\
+
+\end{xltabular}
+}
 
 \subsubsection{Vorauswahl}
 \label{subsubsec:Vorauswahl}
