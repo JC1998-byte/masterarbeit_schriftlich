@@ -20,11 +20,13 @@
 \pagenumbering{Roman}
 
 % add frontpage and declaration
+\hypersetup{pageanchor=false}
 \include{preliminaries/frontpage}
 \include{preliminaries/declaration}
 
 % do not count the frontpage and declaration to the total number of pages
 \setcounter{page}{1}
+\hypersetup{pageanchor=true}
 
 % add abstract
 \include{preliminaries/abstract}
@@ -42,8 +44,11 @@
 \include{preliminaries/nomenclature}
 
 \printnomenclature[2cm]%
-\label{last-roman-page}%
 \clearpage
+
+% save the next unused roman page number after all front matter has shipped
+\newcounter{nextromanpage}
+\setcounter{nextromanpage}{\value{page}}
 
 % use arabic page count for main part
 \pagenumbering{arabic}
@@ -72,11 +77,8 @@
 % for appendix and bibliography, use roman page count again
 \pagenumbering{Roman}
 
-% retrieve last roman page & convert to arabic so that latex understands the actual page count
-\edef\intpagevalue{\getpagerefnumber{last-roman-page}}
-
-% set current page value
-\setcounter{page}{\number\numexpr\expandafter\arabicnumeral\expandafter{\intpagevalue}+1}
+% continue roman numbering after the front matter
+\setcounter{page}{\value{nextromanpage}}
 
 %------------------------------------
 %-- Bibliography - no need to edit --
