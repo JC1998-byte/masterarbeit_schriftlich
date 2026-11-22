@@ -594,7 +594,7 @@ Zusätzlich ist auch eine digitale Anleitung in der Android-App enthalten. Diese
 
 \subsection{Gestaltung eines Fahrzeughandbuches als Vergleichsbedingung}
 \label{subsec:Gestaltung_Fahrzeughandbuch}
-Um in der späteren Untersuchung die Wirksamkeit des selbst entwickelten Onboardings nachweisen zu können, wurde mithilfe eines selbst angefertigten Fahrzeughandbuches eine realistische Vergleichsbedingung geschaffen. Dieses orientierte sich an frei abrufbaren Anleitungen der Hersteller SEAT \cite{seat_leon_sportstourer_2020}, Opel \cite{opel_astra_2021}, Renault \cite{renault_scenic_2025} und Nissan \cite{nissan_juke_2024} und übernahm teilweise inhaltliche Struktur und einzelne Formulierungen aus diesen, um die Beschaffenheit möglichst realistisch wirken zu lassen.
+Um in der späteren Untersuchung die Wirksamkeit des selbst entwickelten Onboardings nachweisen zu können, wurde mithilfe eines selbst angefertigten Fahrzeughandbuches eine realistische Vergleichsbedingung geschaffen. Dieses orientierte sich an frei abrufbaren Anleitungen der Hersteller SEAT \cite{seat_leon_sportstourer_2020}, Opel \cite{opel_astra_2021}, Renault \cite{renault_scenic_2025} und Nissan \cite{nissan_juke_2024} und übernahm teilweise inhaltliche Struktur und einzelne Formulierungen aus diesen, um die Beschaffenheit möglichst realistisch wirken zu lassen. 
 
 \subsection{Gestaltung des Fahrsimulators}
 \label{subsec:Gestaltung_Fahrsimulator}
@@ -670,11 +670,9 @@ Dies entspricht weitestgehend den von Wisselmann et al. \cite{wisselmann2024quer
     \item Informationen werden bestmöglich bei bewusstem Kurvenschneiden vermieden
 \end{itemize}
 
-Auch wenn sich die Erkennung der Fahrspurbegrenzung von kamerabasierten realen Ansätzen unterscheidet, wurde das Wirkprinzip bestmöglich in einer virtuellen Welt nachgebildet. Die Aktivitätsschwelle des Assistenten liegt innerhalb der Simulation bei 60 km/h, was sich an den von Wisselmann et al. \cite{wisselmann2024querfuehrungsassistenz} postulierten für PKW üblichen Geschwindigkeiten orierntiert. 
+Auch wenn sich die Erkennung der Fahrspurbegrenzung von kamerabasierten realen Ansätzen unterscheidet, wurde das Wirkprinzip bestmöglich in einer virtuellen Welt nachgebildet. Die Aktivierungsschwelle des Assistenten liegt innerhalb der Simulation bei 60 km/h, was sich an den von Wisselmann et al. \cite{wisselmann2024querfuehrungsassistenz} beschriebenen für PKW üblichen Geschwindigkeiten orientiert. 
 
 Die Abbildung von Systemgrenzen bei ungünstigen Witterungsbedingungen, beispielsweise bei starkem Dauerregen und dadurch eingeschränkter Erkennbarkeit der Fahrstreifenmarkierungen, weist ebenfalls Unterschiede zur Realität auf. Da die Fahrstreifenerkennung innerhalb der Simulation ausschließlich auf geometrischen Informationen basiert, wird ihre Funktionsfähigkeit nicht durch die tatsächlichen Sichtverhältnisse beeinflusst. Stattdessen erfolgt eine gezielte Simulation dieser Systemgrenze, indem der Spurhalteassistent automatisch deaktiviert wird, sobald die vom Wettersystem berechnete Straßennässe einen zuvor definierten Grenzwert überschreitet. Derselbe Nässewert wird auch vom Oberflächen-Shader der Fahrbahn zur visuellen Darstellung von Nässe und Pfützen verwendet.
-
-
 
 Schilder, Symbole und sonstige grafische Elemente wurden ebenfalls mithilfe von Blender \cite{blender_software} oder Affinity Designer 2 \cite{serif_affinity_designer2} angefertigt. Den Design Features entsprechend ist die Beschaffenheit der Symbole zwischen Onboarding und Simulation bewusst konsistent gehalten. Allerdings muss an dieser Stelle darauf hingewiesen werden, dass die Symbole im Vergleich zu einem echten Fahrzeug etwas größer dargestellt werden. Die Ursache dessen liegt in der starren Perspektive der fahrzeugführenden Person, welche im Vergleich zu einer realen Situation nicht dazu in der Lage ist, die Kopfposition innerhalb der Simulation zu verändern. Es wäre in diesem Fall eine naheliegende Lösung, die Kopfposition innerhalb der Simulation näher am Kombiinstrument zu platzieren. Allerdings würde dies dazu führen, dass die Übersicht über das Verkehrsgeschehen, insbesondere die in diesem Kontext äußerst wichtige Spurführung, darunter leiden würde. Demzufolge wurde ein Kompromiss angestrebt, welcher beiden Anforderungen bestmöglich gerecht werden konnte. 
 
@@ -685,3 +683,9 @@ Für Geräusche wurde auf die freie Soundbibliothek von pixabay \cite{pixabay_so
 
 \section{Evaluation}
 \label{sec:Methodik_Phase_fünf}
+
+\subsection{Studiendesign und Ablauf}
+
+\subsection{Erhebungsinstrumente}
+
+\subsection{Datenauswertung}
